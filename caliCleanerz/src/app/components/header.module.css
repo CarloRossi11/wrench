@@ -1,0 +1,56 @@
+.main {
+  width: 100%;
+  padding: .75rem;
+  /* background-color: #fff; */
+  /* make navbar stick to top? */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.linkGroup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: #cf0119;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.button:hover {
+  color: #000;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+} */
+
+@media (max-width: 600px) {
+  .main {
+    width: 100vw;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .linkGroup {
+    flex-direction: column;
+    width: 100vw;
+    gap: 8px;
+  }
+}
