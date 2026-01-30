@@ -42,26 +42,14 @@ export default function HomeClient() {
 
       <section className={styles.intro}>
         <div className={styles.introLeft}>
-          <HeroOverlay
-            backgroundSrc="/viewz.jpg"
-            height="700px"
-            // aspectRatio="16/9"
-            overlayDarkness={0.5}
-            gradientOverlay
-            fadeIn
-            contentX="50%"
-            contentY="15%"
-          >
             <Image
               className={styles.logo}
-              src="/logoEmailed.png"
-              alt="Cali Cleaners logo"
-              width={300}
-              height={75}
+              src="/twsVerticalWhite.svg"
+              alt="Tech Wrench Web Solutions Logo"
+              width={350}
+              height={250}
               priority
             />
-
-          </HeroOverlay>
         </div>
 
         <div className={styles.introRight}>
