@@ -8,10 +8,6 @@
 
   min-height: 100vh;
   width: 100%;
-  /* font-family: var(--font-geist-sans); */
-  /* overflow-y: auto; */
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 
@@ -76,7 +72,7 @@
   text-align: center;
   padding: 0.5rem;
   color: #ffffff;
-  background-color: #cf0119;
+  background-color: #051D22;
 }
 
 .linkHover {
@@ -87,7 +83,7 @@
 }
 
 .linkHover:hover {
-  color: #E2C49C;
+  color: #CFC6BB;
   text-decoration: none;
 }
 

@@ -1,5 +1,5 @@
 .contactForm {
-  background-color: #cf0119;
+  background-color: #3C6A79;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -88,17 +88,17 @@
 
 .contactForm button {
   padding: 0.7rem 1.5rem;
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: #051D22;
+  color: #CFC6BB;
+  border: 1px solid #CFC6BB;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .contactForm button:hover {
-  background-color: #fff;
-  color: #cf0119;
+  background-color: #CFC6BB;
+  color: #3C6A79;
   /* border-color: #cfc7bb; */
 }
 

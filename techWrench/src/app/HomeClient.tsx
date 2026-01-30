@@ -66,9 +66,9 @@ export default function HomeClient() {
 
         <div className={styles.introRight}>
           <h1>Tech Wrench</h1>
-          <h2>San Diego Window Cleaning & Pressure Washing</h2>
-          <a className={styles.linkHover} href="tel:+16107639226">
-            610-763-9226
+          <h2>Custom Websites, Branding, and Advertising</h2>
+          <a className={styles.linkHover} href="tel:+14129658201">
+            412-965-8201
           </a>
           <section className={styles.contact}>
             <ContactForm />
@@ -97,12 +97,13 @@ export default function HomeClient() {
           </div>
 
           <div className={styles.weDoRight}>
-            <h2>Window Cleaning & Pressure Washing Services</h2>
+            <h2>Website Development Service</h2>
             <p>
-              With over 10 years of experience, CaLi Cleanerz specializes in
-              interior and exterior window, gutter, and solar panel cleaning, plus power washing.
-              Trust our skilled San Diego team to enhance your home’s efficiency
-              and curb appeal with exceptional results.
+              With over 5 years of deveplopment experience, we specialize in
+              creating custom websites that not only look great but also drive
+              results. Our websites load quickly, are mobile-friendly, and are
+              optimized for search engines to help your business get found
+              online.
             </p>
             <div className={styles.ctas}>
               {/* <Link className={styles.primary} href="/about">
@@ -112,9 +113,9 @@ export default function HomeClient() {
           </div>
         </section>
 
-        <div className={styles.igSection}>
+        {/* <div className={styles.igSection}>
           <InstagramPreview username="_cali_cleanerz_" />
-        </div>
+        </div> */}
       </main>
 
       <Footer />
