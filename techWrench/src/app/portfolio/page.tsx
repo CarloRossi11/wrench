@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import PortfolioClient from "./PortfolioClient";
 
 export const metadata: Metadata = {
-  title: "Window, Solar, and Gutter Cleaning Portfolio",
+  title: "Web Development Portfolio",
   description:
-    "View pristine results from Cali Cleanerz's window, solar panel, and gutter cleaning services in San Diego.",
+    "View our web development portfolio showcasing our latest projects and success stories.",
   alternates: {
-    canonical: "https://calicleanerz.netlify.app/portfolio",
+    canonical: "https://techwrench.netlify.app/portfolio",
   },
   openGraph: {
-    title: "Cali Cleanerz Portfolio",
+    title: "Web Development Portfolio",
     description:
-      "View pristine results from Cali Cleanerz's window, solar panel, and gutter cleaning services in San Diego.",
-    url: "https://calicleanerz.netlify.app/portfolio",
+      "View our web development portfolio showcasing our latest projects and success stories.",
+    url: "https://techwrench.netlify.app/portfolio",
   },
 };
 

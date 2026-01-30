@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
-  title: "Contact Cali Cleanerz",
+  title: "Contact Tech Wrench",
   description:
-    "Contact Cali Cleanerz to schedule your window cleaning service or request a free quote.",
+    "Contact Tech Wrench to discuss your web development needs or request a free quote.",
   alternates: {
-    canonical: "https://calicleanerz.netlify.app/contact",
+    canonical: "https://techwrench.netlify.app/contact",
   },
   openGraph: {
-    title: "Contact Cali Cleanerz",
+    title: "Contact Tech Wrench",
     description:
-      "Get in touch with Cali Cleanerz to schedule your window cleaning service or request a free quote.",
-    url: "https://calicleanerz.netlify.app/contact",
+      "Contact Tech Wrench to discuss your web development needs or request a free quote.",
+    url: "https://techwrench.netlify.app/contact",
   },
 };
 

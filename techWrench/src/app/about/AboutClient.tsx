@@ -21,44 +21,37 @@ export default function Page() {
         fadeIn
       >
         <h1>ABOUT</h1>
-        <p>
-          Exceed expectations and ensure that every window shines brilliantly
-          while every customer walks away completely satisfied.
-        </p>
       </HeroOverlay>
       <div className={styles.main}>
         <div className={styles.founder}>
           <div className={styles.founderText}>
             <h1>Services</h1>
             <p>
-              With over 10 years of experience, CaLi Cleanerz Window Cleaning
-              provides top-notch service to keep your windows sparkling.
-              Specializing in both interior and exterior window cleaning, we
-              also offer expertpower washing, gutter cleaning, and solar panel cleaning to
-              enhance your home's aesthetic and efficiency. Trust our skilled
-              team to deliver exceptional results with every job, ensuring your
-              property shines bright under the San Diego sun.
+              With over 5 years of deveplopment experience, we specialize in
+              creating custom websites that not only look great but also drive
+              results. Our websites load quickly, are mobile-friendly, and are
+              optimized for search engines to help your business get found
+              online.
             </p>
           </div>
           <div className={styles.founderImage}>
             <ul>
-              <li>Windows</li>
-              <li>Solar</li>
-              <li>Pressure washing</li>
-              <li>Gutter cleaning</li>
-              <li>Screen cleaning</li>
+              <li>Custom Websites</li>
+              <li>SEO</li>
+              <li>Branding</li>
+              <li>Online Advertising</li>
             </ul>
           </div>
         </div>
         <div className={styles.company}>
           <h1>About The Company</h1>
           <p>
-            CaLi Cleanerz, where we set the standard for window cleaning in San
+            {/* CaLi Cleanerz, where we set the standard for window cleaning in San
             Diego! With over a decade of experience, we confidently deliver
             top-tier service to both commercial and residential clients. Our
             mission is simple: to exceed expectations and ensure that every
             window shines brilliantly while every customer walks away completely
-            satisfied. Fully Insured-NAIC #12831 EIN #33-4820557"
+            satisfied. Fully Insured-NAIC #12831 EIN #33-4820557" */}
           </p>
         </div>
       </div>
