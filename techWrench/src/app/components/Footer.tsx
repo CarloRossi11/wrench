@@ -13,10 +13,10 @@ export default function Footer() {
         <div className={styles.address}>
           <div className={styles.addressContainer}>
             
-              <strong>Cali Cleanerz Co.</strong>
+              <strong>Tech Wrench Web Solutions</strong>
               
-              <a className={styles.wrench} href="tel:+16107639226">
-              610-763-9226
+              <a className={styles.wrench} href="tel:+14129658201">
+              412-965-8201
             </a>
             
           </div>
@@ -25,8 +25,8 @@ export default function Footer() {
           <Link href={"/"}>
             <Image
               className={styles.logo}
-              src="/iconRipped.png"
-              alt="Cali Cleanerz logo"
+              src="/logoBlueT.svg"
+              alt="Tech Wrench logo"
               width={75}
               height={75}
               priority
@@ -38,10 +38,10 @@ export default function Footer() {
             <p className={styles.socialLabel}>Follow Us:</p>
             <div className={styles.socialLinks}>
               <a
-                href="https://www.instagram.com/_cali_cleanerz_/"
+                href="https://www.instagram.com/techwrenchco/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Cali Cleanerz on Instagram"
+                aria-label="Visit Tech Wrench on Instagram"
               >
                 <Image
                   className={styles.icon}
@@ -52,10 +52,40 @@ export default function Footer() {
                   height={16}
                 />
               </a>
+              <a
+                href="https://www.facebook.com/people/Tech-Wrench/61582078050775/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Tech Wrench on Facebook"
+              >
+                <Image
+                  className={styles.icon}
+                  aria-hidden
+                  src="/FB.png"
+                  alt="Facebook icon"
+                  width={16}
+                  height={16}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/tech-wrench/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Tech Wrench on Linkedin"
+              >
+                <Image
+                  className={styles.icon}
+                  aria-hidden
+                  src="/LI.png"
+                  alt="Linkedin icon"
+                  width={16}
+                  height={16}
+                />
+              </a>
             </div>
           </div>
-          <p>©2025 Cali Cleanerz Co. All rights reserved.</p>
-          <p>
+          <p>©2025 Tech Wrench All rights reserved.</p>
+          {/* <p>
             Website developed by{" "}
             <a
               href="https://techwrench.co/"
@@ -64,7 +94,7 @@ export default function Footer() {
             >
               Tech Wrench
             </a>
-          </p>
+          </p> */}
         </div>
       </footer>
     </div>

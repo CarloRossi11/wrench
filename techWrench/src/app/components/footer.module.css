@@ -2,7 +2,8 @@
   min-height: 10vh;
   width: 100%;
   padding: 2rem;
-  color: #000;
+  color: #051D22;
+  background-color: #CFC6BB;
 }
 
 .footer {
@@ -12,16 +13,14 @@
 }
 
 .icon {
-  filter: brightness(0) saturate(100%) invert(13%) sepia(65%) saturate(4759%) hue-rotate(342deg) brightness(106%) contrast(118%);
-  transition:
+filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(406%) hue-rotate(148deg) brightness(91%) contrast(88%);  transition:
     background 0.2s,
     color 0.2s,
     border-color 0.2s;
 }
 
 .icon:hover {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(168deg) brightness(100%) contrast(100%);
-}
+filter: brightness(0) saturate(100%) invert(4%) sepia(60%) saturate(5463%) hue-rotate(177deg) brightness(96%) contrast(96%);}
 
 .footer a {
   align-items: center;
@@ -50,7 +49,6 @@
 .socialLinks {
   display: flex;
   gap: 16px;
-  margin-top: 8px;
 }
 
 .socials {
@@ -96,7 +94,7 @@
 }
 
 .wrench:hover {
-  color: #cf0119;
+  color: #3C6A79;
 }
 
 

@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   padding: .75rem;
-  /* background-color: #fff; */
+  background-color: #CFC6BB;
   /* make navbar stick to top? */
   position: sticky;
   top: 0;
@@ -27,12 +27,12 @@
 }
 
 .button {
-  color: #cf0119;
+  color: #3C6A79;
   transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .button:hover {
-  color: #000;
+  color: #051D22;
 }
 
 /* @media (prefers-color-scheme: dark) {

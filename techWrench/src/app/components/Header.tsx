@@ -18,9 +18,9 @@ export default function Header() {
           <Link href={"/"}>
             <Image
               className={styles.logo}
-              src="/logoBlueT.svg"
-              alt="Tech Wrench logo"
-              width={75}
+              src="/twsHorizontalBlue.svg"
+              alt="Tech Wrench Web Solutions logo"
+              width={200}
               height={75}
               priority
             />
