@@ -1,15 +1,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-rubik: 'Rubik', serif;
-  --font-montseraat: 'Montserrat', serif;
+  --font-pressura: 'GT Pressura Bold', serif;
 }
 
 /*
 Color Palette
-#ffffff
-#cf0119
-#000
+#CFC6BB beigeish
+#051D22 
+#3C6A79
+#FFFFFF 
+#E2E3E2 grayish
 https://coolors.co/assets/img/logo.svg
 */
 
@@ -19,31 +20,6 @@ https://coolors.co/assets/img/logo.svg
     --foreground: #ededed;
   }
 } */
-
-/* Apply Rubik Bold to all headers */
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--font-rubik);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-/* Apply Montserrat to all other text */
-body,
-p,
-span,
-li,
-a,
-input,
-textarea,
-button {
-  font-family: var(--font-montserrat);
-  font-weight: 400;
-  line-height: 1.6;
-}
 
 html,
 body {
@@ -56,6 +32,7 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-pressura), serif;
 }
 
 * {

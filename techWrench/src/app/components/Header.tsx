@@ -18,8 +18,8 @@ export default function Header() {
           <Link href={"/"}>
             <Image
               className={styles.logo}
-              src="/iconRipped.png"
-              alt="Cali Cleanerz logo"
+              src="/logoBlueT.svg"
+              alt="Tech Wrench logo"
               width={75}
               height={75}
               priority
@@ -32,9 +32,6 @@ export default function Header() {
           </Link>
           <Link className={styles.button} href={"/portfolio"}>
             <h3>Portfolio</h3>
-          </Link>
-          <Link className={styles.button} target="_blank" href={"https://windowcleaner.com/CaLi_CleanerZ"}>
-            <h3>Shop</h3>
           </Link>
         </div>
       </div>

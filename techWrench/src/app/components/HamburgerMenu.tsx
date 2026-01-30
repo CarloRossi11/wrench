@@ -15,8 +15,8 @@ const HamburgerMenu: React.FC = () => {
         <Link href={"/"}>
           <Image
             className={styles.logo}
-            src="/iconRipped.png"
-            alt="Cali Cleanerz logo"
+            src="/logoBlueT.svg"
+            alt="Tech Wrench logo"
             width={75}
             height={75}
             priority
@@ -48,9 +48,6 @@ const HamburgerMenu: React.FC = () => {
         </li>
         <li>
           <Link href="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link href="https://windowcleaner.com/CaLi_CleanerZ" target="_blank">Shop</Link>
         </li>
       </ul>
     </nav>

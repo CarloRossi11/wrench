@@ -1,45 +1,44 @@
 import type { Metadata } from "next";
-import { Rubik, Montserrat } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-//Rubik for headers
-//Montserrat for smaller print
-
-const rubik = Rubik({
-  variable: "--font-rubik",
-  subsets: ["latin"],
-  weight: ["700"], // Bold for headers
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"], // Normal + medium + bold for flexibility
+const pressura = localFont({
+  src: "./fonts/GT-Pressura-Bold.ttf",
+  weight: "700",
+  style: "normal",
+  variable: "--font-pressura",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Cali Cleanerz - Expert Window, Solar, and Power Wshing in San Diego",
+  title: "Tech Wrench - Website Development Services",
   description:
-    "Cali Cleanerz offers top-notch window cleaning, solar panel cleaning, and power washing services in San Diego",
+    "Tech Wrench offers professional website development services, specializing in custom and lead generation websites to help your business grow online.",
+  icons: {
+    icon: [
+      {
+        url: "/favicon-light.svg",
+        type: "image/svg+xml",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/favicon-dark.svg",
+        type: "image/svg+xml",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <head>
-        {/* Optional: preconnect to Google Fonts if needed */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body className={`${rubik.variable} ${montserrat.variable}`}>
+      <head></head>
+      <body className={`${pressura.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
