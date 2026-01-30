@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import HomeClient from "./HomeClient";
 
 export const metadata: Metadata = {
-  title: "Window and Solar Cleaning Serivces | Cali Cleanerz",
-  description: "Professional window and solar panel cleaning services in California. Enhance your view and energy efficiency with Cali Cleanerz.",
+  title: "Custome Website Development Services | Tech Wrench",
+  description: "Custom high performing websites developed just for you by Tech Wrench.",
   alternates: {
-    canonical: "https://calicleanerz.netlify.app/",
+    canonical: "https://techwrench.netlify.app/",
   },
 
   openGraph: {
-    title: "Window and Solar Cleaning Serivces | Cali Cleanerz",
-    description:"Professional window and solar panel cleaning services in California. Enhance your view and energy efficiency with Cali Cleanerz.",
-    url: "https://calicleanerz.netlify.app/",
-    siteName: "Cali Cleanerz",
+    title: "Custome Website Development Services | Tech Wrench",
+    description:"Custom high performing websites developed just for you by Tech Wrench.",
+    url: "https://techwrench.netlify.app/",
+    siteName: "Tech Wrench",
     type: "website",
   },
 

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://calicleanerz.netlify.app/sitemap.xml",
+    sitemap: "https://techwrench.netlify.app/sitemap.xml",
   };
 }
