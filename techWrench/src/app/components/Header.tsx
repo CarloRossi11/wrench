@@ -30,8 +30,8 @@ export default function Header() {
           <Link className={styles.button} href={"/contact"}>
             <h3>Contact</h3>
           </Link>
-          <Link className={styles.button} href={"/portfolio"}>
-            <h3>Portfolio</h3>
+          <Link className={styles.button} href={"/services"}>
+            <h3>Services</h3>
           </Link>
         </div>
       </div>
