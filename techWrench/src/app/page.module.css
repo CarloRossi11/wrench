@@ -62,9 +62,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   color: #ffffff;
   background-color: #051D22;
+}
+
+.introText {
+  padding: 1rem;
 }
 
 .linkHover {
@@ -136,8 +140,8 @@
 }
 
 a.primary {
-  background-color: #cfc7bb;
-  color: #274c77;
+  background-color: #CFC6BB;
+  color: #3C6A79;
   border: var(--foreground);
   gap: 8px;
   margin: 1rem;
@@ -165,9 +169,9 @@ a.secondary {
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #274c77;
-    color: #cfc7bb;
-    border: 1px solid #cfc7bb;
+    background-color: #051D22;
+    color: #CFC6BB;
+    border: 1px solid #CFC6BB;
   }
 
   a.secondary:hover {
