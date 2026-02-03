@@ -33,15 +33,10 @@ export default function Page() {
             <h2>
               <i>Starter Package</i>
             </h2>
-            <h3>Starting at $1,000*</h3>
+            <h3>$1,000 +$100/month</h3>
             <ul>
               <li>Custom Website + Basic SEO</li>
               <li>Google Business Profile Optimization</li>
-              <ul>
-                <p>
-                  <i>* additional $100/month for hosting and maintenance</i>
-                </p>
-              </ul>
             </ul>
           </div>
           <div className={styles.establishImage}>
@@ -61,7 +56,7 @@ export default function Page() {
             <h2>
               <i>Brand Refresh</i>
             </h2>
-            <h3>$1,250</h3>
+            <h3>Contact for more information</h3>
             <ul>
               <li>
                 Work with our design expert to create a new brand book,
@@ -101,16 +96,11 @@ export default function Page() {
             <h2>
               <i>Marketing Boost</i>
             </h2>
-            <h3>Starting at $1,500</h3>
+            <h3>Contact for more information</h3>
             <ul>
               <li>Automated E-mail marketing</li>
               <li>SMS (text message) services</li>
-              <li>Meta & Google Ads*</li>
-              <ul>
-                <p>
-                  <i>* First campaign free, fees per additional campaign</i>
-                </p>
-              </ul>
+              <li>Meta & Google Ads</li>
             </ul>
           </div>
           <div className={styles.expandImage}>

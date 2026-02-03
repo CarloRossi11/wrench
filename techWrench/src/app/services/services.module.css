@@ -38,8 +38,8 @@
 }
 
 a.primary {
-  background: var(--foreground);
-  color: var(--background);
+  background-color: #3C6A79;
+  color: #fff;
   gap: 8px;
 }
 
@@ -106,6 +106,7 @@ a.secondary {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  max-width: 407px;
 }
 
 .expandImage {
@@ -114,7 +115,6 @@ a.secondary {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  max-width: 407px;
 }
 
 .buttonContainer {
@@ -123,11 +123,24 @@ a.secondary {
   justify-content: center;
 }
 
+ .establishText,
+  .growText,
+  .expandText {
+    width: 50%
+  }
+
+  .establishImage,
+  .growImage,
+  .expandImage {
+    width: 50%;
+    max-width: 407px;
+  }
+
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-    --button-primary-hover: #3b6a78;
+    background-color: #051D22;
+    color: #CFC6BB;
+    /* border: 1px solid #cfc7bb; */
   }
 
   a.secondary:hover {
@@ -146,20 +159,23 @@ a.secondary {
   .establish,
   .grow,
   .expand {
-    padding: 1rem 0;
+    padding: .5rem 0;
     max-width: 100%;
+    justify-content: space-around;
   }
 
   .establishText,
   .growText,
   .expandText {
-    padding: 1rem 1rem 0 0;
+    padding: 1rem .5rem 0 0;
+    display: flex;
   }
 
   .establishImage,
   .growImage,
   .expandImage {
     padding: 1rem 0;
+    max-width: 30%;
   }
 
   .logo {

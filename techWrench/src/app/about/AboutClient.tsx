@@ -26,12 +26,11 @@ export default function Page() {
         <div className={styles.company}>
           <h1>About The Company</h1>
           <p>
-            {/* CaLi Cleanerz, where we set the standard for window cleaning in San
-            Diego! With over a decade of experience, we confidently deliver
-            top-tier service to both commercial and residential clients. Our
-            mission is simple: to exceed expectations and ensure that every
-            window shines brilliantly while every customer walks away completely
-            satisfied. Fully Insured-NAIC #12831 EIN #33-4820557" */}
+            Tech Wrench Web Solutions is dedicated to providing small businesses
+            with high quality, custom web development services. We understand the
+            unique challenges that small businesses face when trying to establish
+            an online presence, and we are committed to helping our clients
+            overcome those challenges through effective website design, SEO, and branding strategies.
           </p>
         </div>
         <div className={styles.founder}>
