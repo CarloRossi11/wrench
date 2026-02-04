@@ -13,19 +13,13 @@ export default function Page() {
   return (
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
-      <HeroOverlay
-        backgroundSrc="/city.png"
-        height="500px"
-        overlayDarkness={0.5}
-        // gradientOverlay
-        fadeIn
-      >
+      <div className={styles.heroArea}>
         <h1>CONTACT</h1>
         <p>
           Please complete the form below and we will get back to you within 1-2
           business days to discuss the next steps for your project.{" "}
         </p>
-      </HeroOverlay>
+      </div>
       <div className={styles.main}>
         <ContactForm />
       </div>

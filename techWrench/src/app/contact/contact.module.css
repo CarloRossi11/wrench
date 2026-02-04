@@ -5,13 +5,12 @@
   color: #fff
 }
 
-.heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e8e4e4;
-}
-
-.text {
-  font-size: 1.2rem;
-  color: #666;
+.heroArea {
+  background-color: #051D22;
+  height: 500px;
+  color: #CFC6BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }

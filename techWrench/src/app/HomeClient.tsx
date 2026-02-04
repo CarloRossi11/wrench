@@ -38,7 +38,7 @@ export default function HomeClient() {
             generating websites for small businesses. Our websites are custom
             designed and hand coded to fit your specific needs -no Wordpress or
             AI slop. Our sites not only look great on both mobile and desktop
-            screens, but also load quickly and are Search Engine Optimised
+            screens, but also load quickly and are Search Engine Optimized
             (SEO). This means that not only will customers see your site, they
             will have a premimum experience when they visit it.
           </p>
@@ -73,7 +73,7 @@ export default function HomeClient() {
             <ul>
               <li>Load quickly</li>
               <li>Responsive Design for Mobile and Desktop</li>
-              <li>Search Engine Optimization (SEO)</li>
+              <li>Search Engine Optimized (SEO)</li>
             </ul>
             <div className={styles.ctas}>
               {/* <Link className={styles.primary} href="/about">

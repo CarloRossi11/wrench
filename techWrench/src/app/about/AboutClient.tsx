@@ -13,36 +13,34 @@ export default function Page() {
   return (
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
-      <HeroOverlay
-        backgroundSrc="/jungleSolar.jpeg"
-        height="500px"
-        overlayDarkness={0.5}
-        gradientOverlay
-        fadeIn
-      >
+      <div className={styles.heroArea}>
         <h1>ABOUT</h1>
-      </HeroOverlay>
+        <p>Learn more about what Tech Wrench is and who is behind it.</p>
+      </div>
       <div className={styles.main}>
         <div className={styles.company}>
-          <h1>About The Company</h1>
-          <p>
-            Tech Wrench Web Solutions is dedicated to providing small businesses
-            with high quality, custom web development services. We understand the
-            unique challenges that small businesses face when trying to establish
-            an online presence, and we are committed to helping our clients
-            overcome those challenges through effective website design, SEO, and branding strategies.
-          </p>
-        </div>
-        <div className={styles.founder}>
-          <div className={styles.founderImage}>
+          <div className={styles.companyImage}>
             <Image
-              src="/founder.jpeg"
-              alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
+              src="/twsVerticalWhite.svg"
+              alt="Tech Wrench Web Solutions Logo"
               width={300}
               height={400}
               priority
             />
           </div>
+          <div className={styles.founderText}>
+            <h1>About The Company</h1>
+            <p>
+              Tech Wrench Web Solutions is dedicated to providing small
+              businesses with high quality, custom web development services. We
+              understand the unique challenges that small businesses face when
+              trying to establish an online presence, and we are committed to
+              helping our clients overcome those challenges through effective
+              website design, SEO, and branding strategies.
+            </p>
+          </div>
+        </div>
+        <div className={styles.founder}>
           <div className={styles.founderText}>
             <h1>About The Founder</h1>
             <p>
@@ -57,6 +55,15 @@ export default function Page() {
               establish a strong online presence through custom websites,
               effective SEO strategies, and compelling branding.
             </p>
+          </div>
+          <div className={styles.founderImage}>
+            <Image
+              src="/founder.jpeg"
+              alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
+              width={300}
+              height={400}
+              priority
+            />
           </div>
         </div>
       </div>

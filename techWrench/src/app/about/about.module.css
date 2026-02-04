@@ -1,12 +1,47 @@
-.heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e8e4e4;
+.heroArea {
+  background-color: #051D22;
+  height: 500px;
+  color: #CFC6BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
-.text {
-  font-size: 1.2rem;
-  color: #666;
+.company {
+  color: #051D22;
+  padding: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.founder {
+  background-color: #3C6A79;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.companyText,
+.founderText {
+  width: 50%;
+}
+
+.companyImage,
+.founderImage {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .ctas {
@@ -40,42 +75,6 @@ a.primary {
   gap: 8px;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
-}
-
-.company {
-  padding: 2rem;
-  background-color: #3C6A79;
-  color: #fff
-}
-
-.founder {
-  padding: 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.founderText {
-  width: 50%;
-}
-
-.founderImage {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttonContainer {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
 @media (max-width: 600px) {
   .main {
     display: flex;
@@ -84,14 +83,12 @@ a.secondary {
   }
 
   .company {
-
     text-align: center;
   }
 
   .founder {
     display: flex;
     flex-direction: column;
-    /* margin: 1rem; */
     align-items: center;
     justify-content: space-around;
   }
@@ -101,6 +98,7 @@ a.secondary {
     text-align: center;
   }
 
+  .companyImage,
   .founderImage {
     display: none;
   }
@@ -110,12 +108,6 @@ a.secondary {
   a.primary:hover {
     background-color: #051D22;
     color: #CFC6BB;
-    /* border: 1px solid #cfc7bb; */
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
   }
 
   .footer a:hover {

@@ -13,20 +13,14 @@ export default function Page() {
   return (
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
-      <HeroOverlay
-        backgroundSrc="/ripped/playroom.webp"
-        height="500px"
-        overlayDarkness={0.5}
-        gradientOverlay
-        fadeIn
-      >
+      <div className={styles.heroArea}>
         <h1>SERVICES</h1>
         <p>
           Tech Wrench provides web development, digital solutions, and
           technology support designed to help small businesses grow and stay
           ahead in a fast-changing world.
         </p>
-      </HeroOverlay>
+      </div>
       <div className={styles.main}>
         <div className={styles.establish}>
           <div className={styles.establishText}>
@@ -37,16 +31,19 @@ export default function Page() {
             <ul>
               <li>Custom Website + Basic SEO</li>
               <li>Google Business Profile Optimization</li>
+              <li>Monthly Website Maintenance</li>
+              <ul>
+                <li>Security Updates</li>
+                <li>Content Updates (up to 5 monthly)</li>
+              </ul>
             </ul>
           </div>
           <div className={styles.establishImage}>
             <Image
-              className={styles.logo}
               src="/gptestablish.png"
               alt="Establish Image"
               width={200}
               height={300}
-              priority
             />
           </div>
         </div>
@@ -56,7 +53,7 @@ export default function Page() {
             <h2>
               <i>Brand Refresh</i>
             </h2>
-            <h3>Contact for more information</h3>
+            <h3>Contact for pricing</h3>
             <ul>
               <li>
                 Work with our design expert to create a new brand book,
@@ -67,14 +64,14 @@ export default function Page() {
                 <li>Color palette</li>
                 <li>Fonts</li>
               </ul>
-              <li>Create/update social media & google profiles</li>
+              <li>Create/update social media profiles</li>
               <ul>
                 <li>Facebok</li>
                 <li>Instagram</li>
                 <li>LinkedIn</li>
                 <ul>
                   <p>
-                    <i>* includes 1 initial post for each platform</i>
+                    <i>* includes 1 post for each platform</i>
                   </p>
                 </ul>
               </ul>
@@ -82,12 +79,10 @@ export default function Page() {
           </div>
           <div className={styles.growImage}>
             <Image
-              className={styles.logo}
               src="/gptgrow.png"
               alt="Grow Image"
               width={200}
               height={300}
-              priority
             />
           </div>
         </div>
@@ -96,21 +91,20 @@ export default function Page() {
             <h2>
               <i>Marketing Boost</i>
             </h2>
-            <h3>Contact for more information</h3>
+            <h3>Contact for pricing</h3>
             <ul>
               <li>Automated E-mail marketing</li>
               <li>SMS (text message) services</li>
-              <li>Meta & Google Ads</li>
+              <li>Google Ads</li>
+              <li>Social Media Ads</li>
             </ul>
           </div>
           <div className={styles.expandImage}>
             <Image
-              className={styles.logo}
               src="/gptexpand.png"
               alt="Expand Image"
               width={200}
               height={300}
-              priority
             />
           </div>
         </div>

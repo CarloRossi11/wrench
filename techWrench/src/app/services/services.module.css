@@ -1,16 +1,16 @@
 .main {
   padding: 2rem;
+  color: #051D22;
 }
 
-.heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e8e4e4;
-}
-
-.text {
-  font-size: 1.2rem;
-  color: #666;
+.heroArea {
+  background-color: #051D22;
+  height: 500px;
+  color: #CFC6BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .ctas {
@@ -43,78 +43,36 @@ a.primary {
   gap: 8px;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
-}
-
-.establish {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.establishText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  max-width: 407px;
-}
-
-.establishImage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.grow {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.growText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  max-width: 407px;
-}
-
-.growImage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
+.establish,
+.grow,
 .expand {
   display: flex;
   justify-content: center;
   padding: 1rem;
 }
 
+.establishText,
+.growText,
 .expandText {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  max-width: 407px;
+  max-width: 400px;
 }
 
+.establishImage,
+.growImage,
 .expandImage {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  max-width: 400px;
 }
 
 .buttonContainer {
@@ -123,35 +81,12 @@ a.secondary {
   justify-content: center;
 }
 
- .establishText,
-  .growText,
-  .expandText {
-    width: 50%
-  }
-
-  .establishImage,
-  .growImage,
-  .expandImage {
-    width: 50%;
-    max-width: 407px;
-  }
-
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background-color: #051D22;
     color: #CFC6BB;
-    /* border: 1px solid #cfc7bb; */
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -159,27 +94,21 @@ a.secondary {
   .establish,
   .grow,
   .expand {
-    padding: .5rem 0;
-    max-width: 100%;
+    display: flex;
+    width: 100%;
     justify-content: space-around;
   }
 
   .establishText,
   .growText,
   .expandText {
-    padding: 1rem .5rem 0 0;
     display: flex;
+    width: 100%;
   }
 
   .establishImage,
   .growImage,
   .expandImage {
-    padding: 1rem 0;
-    max-width: 30%;
-  }
-
-  .logo {
-    width: 100px;
-    height: 150px;
+    display: none;
   }
 }
