@@ -1,13 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HamburgerMenu from "./components/HamburgerMenu";
 import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
+
+// Add "what we do" -ADDED
+// expand features section -ADDED
+// add services section -ADDED
+// add portfolio
+// add contact form
+
+// adjust max width on text sections
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
@@ -52,35 +59,100 @@ export default function HomeClient() {
 
       <main className={styles.main}>
         <section className={styles.weDo}>
-          <div className={styles.weDoLeft}>
-            <h2>Website Development Service</h2>
-            <p>
-              With over 5 years of deveplopment experience, we specialize in
-              creating custom websites that not only look great but also drive
-              results. Our websites load quickly, are mobile-friendly, and are
-              optimized for search engines to help your business get found
-              online.
-            </p>
-            <div className={styles.ctas}>
-              {/* <Link className={styles.primary} href="/about">
-                View Services
-              </Link> */}
-            </div>
-          </div>
-
-          <div className={styles.weDoRight}>
-            <h2>Our Websites</h2>
+          <h2>Website Development Service</h2>
+          <p>
+            Our flagship service is custom website development for small
+            businesses. We work closely with our clients to understand their
+            unique needs and goals, and then create a website that not only
+            looks great but also drives results.
+          </p>
+          <div className={styles.features}>
+            <h3>Our Websites:</h3>
             <ul>
-              <li>Load quickly</li>
-              <li>Responsive Design for Mobile and Desktop</li>
-              <li>Search Engine Optimized (SEO)</li>
+              <li className={styles.bullet}>Load quickly</li>
+              <ul>
+                <li className={styles.support}>
+                  Every website we develop has a 95+ performance score, this
+                  promotes user interaction and reduces churn.
+                </li>
+              </ul>
+              <li className={styles.bullet}>
+                Responsive Design for Mobile and Desktop
+              </li>
+              <ul>
+                <li className={styles.support}>
+                  We design each site to look and behave beautifully on every
+                  screen size, from the smallest phone to the largest monitor.
+                </li>
+              </ul>
+              <li className={styles.bullet}>Search Engine Optimized (SEO)</li>
+              <ul>
+                <li className={styles.support}>
+                  There's no point in having a stunning website if nobody is
+                  going to see it. That's why we make sure each website is as
+                  optimzed as possible to populate high in search results.
+                </li>
+              </ul>
             </ul>
+          </div>
+          <div className={styles.buttonContainer}>
             <div className={styles.ctas}>
-              {/* <Link className={styles.primary} href="/about">
-                View Services
-              </Link> */}
+              <a className={styles.secondary} href={"/about"}>
+                About
+              </a>
             </div>
           </div>
+        </section>
+
+        <section className={styles.services}>
+          <h1>Our Products</h1>
+          <div className={styles.servicesContent}>
+            <div className={styles.establishText}>
+              <h2>
+                Starter Package
+              </h2>
+              <h3><i>$1,000 +$100/month</i></h3>
+              <p>
+                {" "}
+                Our flagship product described above, includes the responsive
+                design, SEO, plus hosting, maintenance, and updates.{" "}
+              </p>
+            </div>
+            <div className={styles.growText}>
+              <h2>
+                Brand Refresh
+              </h2>
+              <h3><i>Contact for pricing</i></h3>
+              <p>
+                Work with our design expert to create a new brand book,
+                including primary and secondary logos, fonts, and a color
+                palette. We'll incorporate your custom elements and take your website,
+                social media, and other content to the next level.
+              </p>
+            </div>
+            <div className={styles.expandText}>
+              <h2>
+                Marketing Boost
+              </h2>
+              <h3><i>Contact for pricing</i></h3>
+              <p>
+                Reach even more of your target market with email and text
+                services, google ads, and social media assistance.
+              </p>
+            </div>
+          </div>
+          <div className={styles.buttonContainer}>
+            <div className={styles.ctas}>
+              <a className={styles.primary} href={"/services"}>
+                Services
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.contact}>
+          <h2>Get Started Today</h2>
+          <ContactForm />
         </section>
       </main>
 

@@ -2,10 +2,10 @@
   width: 100%;
   padding: .75rem;
   background-color: #CFC6BB;
-  /* make navbar stick to top? */
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .links {

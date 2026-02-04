@@ -87,13 +87,20 @@
 ---------------------------- */
 
 .contactForm button {
-  padding: 0.7rem 1.5rem;
+  padding: 0 20px;
   background-color: #051D22;
   color: #CFC6BB;
   border: 1px solid #CFC6BB;
-  border-radius: 4px;
+  border-radius: 128px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  height: 48px;
   cursor: pointer;
-  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .contactForm button:hover {
