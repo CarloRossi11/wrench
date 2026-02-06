@@ -27,11 +27,11 @@ export default function Header() {
           </Link>
         </div>
         <div className={styles.linkGroup}>
-          <Link className={styles.button} href={"/contact"}>
-            <h3>Contact</h3>
-          </Link>
           <Link className={styles.button} href={"/services"}>
             <h3>Services</h3>
+          </Link>
+          <Link className={styles.button} href={"/contact"}>
+            <h3>Contact</h3>
           </Link>
         </div>
       </div>

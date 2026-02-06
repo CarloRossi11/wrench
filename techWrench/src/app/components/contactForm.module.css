@@ -1,6 +1,6 @@
 .contactForm {
   background-color: #3C6A79;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 90%;
@@ -105,7 +105,7 @@
 
 .contactForm button:hover {
   background-color: #CFC6BB;
-  color: #3C6A79;
+  color: #051D22;
   /* border-color: #cfc7bb; */
 }
 

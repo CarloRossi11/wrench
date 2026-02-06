@@ -8,13 +8,19 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
 
-// Add "what we do" -ADDED
-// expand features section -ADDED
-// add services section -ADDED
+// ToDo: //
+//////////
 // add portfolio
-// add contact form
+// update seo files ?
+// add layering
+// 1.618 fonts
+// contact form button
+// header logo & contact
 
-// adjust max width on text sections
+// adjust max width on text sections -DONE
+// increase white space -DONE
+// uniform button colors/ accessibility -DONE
+// adjust features ul/li use -DONE
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
@@ -68,38 +74,31 @@ export default function HomeClient() {
           </p>
           <div className={styles.features}>
             <h3>Our Websites:</h3>
-            <ul>
-              <li className={styles.bullet}>Load quickly</li>
-              <ul>
-                <li className={styles.support}>
+            <div>
+              <div className={styles.feature}>
+                <p className={styles.bullet}>Load quickly</p>
+                <p className={styles.support}>
                   Every website we develop has a 95+ performance score, this
                   promotes user interaction and reduces churn.
-                </li>
-              </ul>
-              <li className={styles.bullet}>
-                Responsive Design for Mobile and Desktop
-              </li>
-              <ul>
-                <li className={styles.support}>
+                </p>
+              </div>
+              <div className={styles.feature}>
+                <p className={styles.bullet}>
+                  Responsive Design for Mobile and Desktop
+                </p>
+                <p className={styles.support}>
                   We design each site to look and behave beautifully on every
                   screen size, from the smallest phone to the largest monitor.
-                </li>
-              </ul>
-              <li className={styles.bullet}>Search Engine Optimized (SEO)</li>
-              <ul>
-                <li className={styles.support}>
+                </p>
+              </div>
+              <div className={styles.feature}>
+                <p className={styles.bullet}>Search Engine Optimized (SEO)</p>
+                <p className={styles.support}>
                   There's no point in having a stunning website if nobody is
                   going to see it. That's why we make sure each website is as
                   optimzed as possible to populate high in search results.
-                </li>
-              </ul>
-            </ul>
-          </div>
-          <div className={styles.buttonContainer}>
-            <div className={styles.ctas}>
-              <a className={styles.secondary} href={"/about"}>
-                About
-              </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -108,10 +107,10 @@ export default function HomeClient() {
           <h1>Our Products</h1>
           <div className={styles.servicesContent}>
             <div className={styles.establishText}>
-              <h2>
-                Starter Package
-              </h2>
-              <h3><i>$1,000 +$100/month</i></h3>
+              <h2>Starter Package</h2>
+              <h3>
+                <i>Starting at $1,000 + $100/month</i>
+              </h3>
               <p>
                 {" "}
                 Our flagship product described above, includes the responsive
@@ -119,22 +118,22 @@ export default function HomeClient() {
               </p>
             </div>
             <div className={styles.growText}>
-              <h2>
-                Brand Refresh
-              </h2>
-              <h3><i>Contact for pricing</i></h3>
+              <h2>Brand Refresh</h2>
+              <h3>
+                <i>Contact for pricing</i>
+              </h3>
               <p>
                 Work with our design expert to create a new brand book,
                 including primary and secondary logos, fonts, and a color
-                palette. We'll incorporate your custom elements and take your website,
-                social media, and other content to the next level.
+                palette. We'll incorporate your custom elements and take your
+                website, social media, and other content to the next level.
               </p>
             </div>
             <div className={styles.expandText}>
-              <h2>
-                Marketing Boost
-              </h2>
-              <h3><i>Contact for pricing</i></h3>
+              <h2>Marketing Boost</h2>
+              <h3>
+                <i>Contact for pricing</i>
+              </h3>
               <p>
                 Reach even more of your target market with email and text
                 services, google ads, and social media assistance.
