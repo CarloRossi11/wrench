@@ -16,6 +16,7 @@ import ContactForm from "./components/ContactForm";
 // 1.618 fonts
 // contact form button
 // header logo & contact
+// add animations
 
 // adjust max width on text sections -DONE
 // increase white space -DONE
