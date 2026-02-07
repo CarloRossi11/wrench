@@ -18,11 +18,6 @@ import ContactForm from "./components/ContactForm";
 // header logo & contact
 // add animations
 
-// adjust max width on text sections -DONE
-// increase white space -DONE
-// uniform button colors/ accessibility -DONE
-// adjust features ul/li use -DONE
-
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
 
