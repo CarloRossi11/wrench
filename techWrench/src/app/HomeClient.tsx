@@ -30,6 +30,7 @@ export default function HomeClient() {
       <section className={styles.intro}>
         <div className={styles.introLeft}>
           <Image
+            id="hero"
             className={styles.logo}
             src="/twsVerticalWhite.svg"
             alt="Tech Wrench Web Solutions Logo"
@@ -53,7 +54,7 @@ export default function HomeClient() {
           </p>
           <div className={styles.ctas}>
             <a className={styles.primary} href={"./contact"}>
-              Contact
+              Get Started
             </a>
           </div>
         </div>

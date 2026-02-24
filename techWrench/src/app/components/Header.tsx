@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./header.module.css";
 import Image from "next/image";
+import ScrollLogo from "./ScrollLogo";
 
 export default function Header() {
   return (
@@ -16,13 +17,12 @@ export default function Header() {
         </div>
         <div className={styles.logoContainer}>
           <Link href={"/"}>
-            <Image
-              className={styles.logo}
-              src="/twsHorizontalBlue.svg"
-              alt="Tech Wrench Web Solutions logo"
-              width={200}
-              height={75}
-              priority
+            <ScrollLogo
+              primarySrc="/logo-light.png"
+              secondarySrc="/logo-dark.png"
+              width={160}
+              height={40}
+              triggerId="hero"
             />
           </Link>
         </div>
