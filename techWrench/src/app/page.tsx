@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   title: "Custom Website Development Services | Tech Wrench",
   description: "Custom high performing websites developed just for you by Tech Wrench.",
   alternates: {
-    canonical: "https://techwrench.netlify.app/",
+    canonical: "https://techwrench.co/",
   },
 
   openGraph: {
     title: "Custom Website Development Services | Tech Wrench",
     description:"Custom high performing websites developed just for you by Tech Wrench.",
-    url: "https://techwrench.netlify.app/",
+    url: "https://techwrench.co/",
     siteName: "Tech Wrench",
     type: "website",
   },

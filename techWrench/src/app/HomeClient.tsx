@@ -11,12 +11,11 @@ import ContactForm from "./components/ContactForm";
 // ToDo: //
 //////////
 // add portfolio
-// update seo files ?
 // add layering
 // 1.618 fonts
 // contact form button
-// header logo & contact
 // add animations
+// primary button hover
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
