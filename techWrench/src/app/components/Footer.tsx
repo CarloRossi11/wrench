@@ -15,8 +15,8 @@ export default function Footer() {
             
               <strong>Tech Wrench Web Solutions</strong>
               
-              <a className={styles.wrench} href="tel:+14129658201">
-              412-965-8201
+              <a className={styles.wrench} href="mailto:carlo@techwrench.co">
+              carlo@techwrench.co
             </a>
             
           </div>

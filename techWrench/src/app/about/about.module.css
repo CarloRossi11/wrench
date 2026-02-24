@@ -109,7 +109,7 @@ a.primary {
 
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #051D22;
+    background-color: #3C6A79;
     color: #CFC6BB;
   }
 
