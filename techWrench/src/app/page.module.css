@@ -94,8 +94,8 @@
 }
 
 .feature {
-  margin: 1rem;
-  padding: .25rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
   border-radius: 1rem;
   background-color: #CFC6BB;
   color: #051D22;
@@ -114,7 +114,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #3C6A79;
   color: #fff;
   width: 100%;
@@ -123,6 +123,7 @@
 
 .services h1 {
   text-decoration: underline;
+  padding: 1rem 0rem;
 }
 
 .servicesContent {
@@ -137,14 +138,16 @@
 .establishText,
 .growText,
 .expandText {
+  margin: 1rem 1rem;
   padding: 1rem;
   text-align: center;
   max-width: 400px;
+  border-radius: 1rem;
+  background-color: #051D22;
 }
 
 .ctas {
   display: flex;
-  /* gap: 16px; */
   justify-content: center;
 }
 

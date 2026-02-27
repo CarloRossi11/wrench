@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import HamburgerMenu from "./components/HamburgerMenu";
 import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
+import { motion } from "motion/react";
 
 // ToDo: //
 //////////
@@ -15,7 +16,6 @@ import ContactForm from "./components/ContactForm";
 // add layering
 // add portfolio
 // 1.618 fonts
-
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
@@ -66,75 +66,124 @@ export default function HomeClient() {
             Our flagship service is custom website development for small
             businesses. We work closely with our clients to understand their
             unique needs and goals, and then create a website that not only
-            looks great but also drives results.
+            looks great but also drives results. Our websites:
           </p>
           <div className={styles.features}>
-            <h3>Our Websites:</h3>
             <div>
-              <div className={styles.feature}>
-                <p className={styles.bullet}>Load quickly</p>
-                <p className={styles.support}>
-                  Every website we develop has a 95+ performance score, this
-                  promotes user interaction and reduces churn.
-                </p>
-              </div>
-              <div className={styles.feature}>
-                <p className={styles.bullet}>
-                  Responsive Design for Mobile and Desktop
-                </p>
-                <p className={styles.support}>
-                  We design each site to look and behave beautifully on every
-                  screen size, from the smallest phone to the largest monitor.
-                </p>
-              </div>
-              <div className={styles.feature}>
-                <p className={styles.bullet}>Search Engine Optimized (SEO)</p>
-                <p className={styles.support}>
-                  There's no point in having a stunning website if nobody is
-                  going to see it. That's why we make sure each website is as
-                  optimzed as possible to populate high in search results.
-                </p>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <div className={styles.feature}>
+                  <h3 className={styles.bullet}>Load quickly</h3>
+                  <p className={styles.support}>
+                    Every website we develop has a 95+ performance score, this
+                    promotes user interaction and reduces churn.
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <div className={styles.feature}>
+                  <h3 className={styles.bullet}>
+                    Responsive Design for Mobile and Desktop
+                  </h3>
+                  <p className={styles.support}>
+                    We design each site to look and behave beautifully on every
+                    screen size, from the smallest phone to the largest monitor.
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <div className={styles.feature}>
+                  <h3 className={styles.bullet}>Search Engine Optimized (SEO)</h3>
+                  <p className={styles.support}>
+                    There's no point in having a stunning website if nobody is
+                    going to see it. That's why we make sure each website is as
+                    optimzed as possible to populate high in search results.
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
         <section className={styles.services}>
-          <h1>Our Products</h1>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <h1>Our Products</h1>
+          </motion.div>
+
           <div className={styles.servicesContent}>
-            <div className={styles.establishText}>
-              <h2>Starter Package</h2>
-              <h3>
-                <i>Starting at $1,000 + $100/month</i>
-              </h3>
-              <p>
-                {" "}
-                Our flagship product described above, includes the responsive
-                design, SEO, plus hosting, maintenance, and updates.{" "}
-              </p>
-            </div>
-            <div className={styles.growText}>
-              <h2>Brand Refresh</h2>
-              <h3>
-                <i>Contact for pricing</i>
-              </h3>
-              <p>
-                Work with our design expert to create a new brand book,
-                including primary and secondary logos, fonts, and a color
-                palette. We'll incorporate your custom elements and take your
-                website, social media, and other content to the next level.
-              </p>
-            </div>
-            <div className={styles.expandText}>
-              <h2>Marketing Boost</h2>
-              <h3>
-                <i>Contact for pricing</i>
-              </h3>
-              <p>
-                Reach even more of your target market with email and text
-                services, google ads, and social media assistance.
-              </p>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.establishText}>
+                <h2>Starter Package</h2>
+                <h3>
+                  <i>Starting at $1,000 + $100/month</i>
+                </h3>
+                <p>
+                  {" "}
+                  Our flagship product described above, includes the responsive
+                  design, SEO, plus hosting, maintenance, and updates.{" "}
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.growText}>
+                <h2>Brand Refresh</h2>
+                <h3>
+                  <i>Contact for pricing</i>
+                </h3>
+                <p>
+                  Work with our design expert to create a new brand book,
+                  including primary and secondary logos, fonts, and a color
+                  palette. We'll incorporate your custom elements and take your
+                  website, social media, and other content to the next level.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.expandText}>
+                <h2>Marketing Boost</h2>
+                <h3>
+                  <i>Contact for pricing</i>
+                </h3>
+                <p>
+                  Reach even more of your target market with email and text
+                  services, google ads, and social media assistance.
+                </p>
+              </div>
+            </motion.div>
           </div>
           <div className={styles.buttonContainer}>
             <div className={styles.ctas}>
@@ -146,8 +195,23 @@ export default function HomeClient() {
         </section>
 
         <section className={styles.contact}>
-          <h2>Get Started Today</h2>
-          <ContactForm />
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <h2>Get Started Today</h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <ContactForm />
+          </motion.div>
         </section>
       </main>
 
