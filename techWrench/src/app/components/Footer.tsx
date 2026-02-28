@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./footer.module.css";
 import { getMapsLink } from "../utils/maps";
-
+import { motion } from "motion/react";
 const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
 
 export default function Footer() {
@@ -12,27 +12,35 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.address}>
           <div className={styles.addressContainer}>
-            
-              <strong>Tech Wrench Web Solutions</strong>
-              
-              <a className={styles.wrench} href="mailto:carlo@techwrench.co">
+            <strong>Tech Wrench Web Solutions</strong>
+
+            <a className={styles.wrench} href="mailto:carlo@techwrench.co">
               carlo@techwrench.co
             </a>
-            
           </div>
         </div>
-        <div className={styles.logoContainer}>
-          <Link href={"/"}>
-            <Image
-              className={styles.logo}
-              src="/logoBlueT.svg"
-              alt="Tech Wrench logo"
-              width={75}
-              height={75}
-              priority
-            />
-          </Link>
-        </div>
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <div className={styles.logoContainer}>
+            <Link href={"/"}>
+              <Image
+                className={styles.logo}
+                src="/logoBlueT.svg"
+                alt="Tech Wrench logo"
+                width={75}
+                height={75}
+                priority
+              />
+            </Link>
+          </div>
+        </motion.a>
         <div className={styles.copyright}>
           <div className={styles.socials}>
             <p className={styles.socialLabel}>Follow Us:</p>

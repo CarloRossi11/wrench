@@ -10,58 +10,78 @@ const HamburgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Container animation
-const menuVariants: Variants = {
-  hidden: {
-    y: -40,
-    opacity: 0,
-    transition: {
-      duration: 0.25,
-      ease: [0.4, 0, 0.2, 1],
+  const menuVariants: Variants = {
+    hidden: {
+      y: -40,
+      opacity: 0,
+      transition: {
+        duration: 0.25,
+        ease: [0.4, 0, 0.2, 1],
+      },
     },
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.35,
-      ease: [0.22, 1, 0.36, 1],
-      staggerChildren: 0.08,
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.35,
+        ease: [0.22, 1, 0.36, 1],
+        staggerChildren: 0.08,
+      },
     },
-  },
-};
+  };
 
   // Individual link animation
-const itemVariants: Variants = {
-  hidden: { y: -15, opacity: 0 },
-  visible: { y: 0, opacity: 1 },
-};
+  const itemVariants: Variants = {
+    hidden: { y: -15, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
 
   return (
     <nav className={styles.navbar}>
       {/* Logo */}
-      <div className={styles.logo}>
-        <Link href={"/"}>
-          <Image
-            className={styles.logo}
-            src="/logoBlueT.svg"
-            alt="Tech Wrench logo"
-            width={75}
-            height={75}
-            priority
-          />
-        </Link>
-      </div>
 
-      {/* Hamburger */}
-      <button
-        className={`${styles.hamburger} ${isOpen ? styles.open : ""}`}
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu"
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 20,
+        }}
       >
-        <span />
-        <span />
-        <span />
-      </button>
+        <div className={styles.logo}>
+          <Link href={"/"}>
+            <Image
+              className={styles.logo}
+              src="/logoBlueT.svg"
+              alt="Tech Wrench logo"
+              width={75}
+              height={75}
+              priority
+            />
+          </Link>
+        </div>
+      </motion.a>
+      {/* Hamburger */}
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 20,
+        }}
+      >
+        <button
+          className={`${styles.hamburger} ${isOpen ? styles.open : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </motion.a>
 
       {/* Mobile Menu */}
       <AnimatePresence>

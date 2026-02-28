@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import HamburgerMenu from "../components/HamburgerMenu";
 import useIsMobile from "../hooks/useIsMobile";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function Page() {
   const isMobile = useIsMobile(850);
@@ -108,11 +110,21 @@ export default function Page() {
           </div>
         </div>
         <div className={styles.buttonContainer}>
-          <div className={styles.ctas}>
-            <a className={styles.primary} href={"/contact"}>
-              Contact
-            </a>
-          </div>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            <div className={styles.ctas}>
+              <Link className={styles.primary} href={"/contact"}>
+                Contact
+              </Link>
+            </div>
+          </motion.a>
         </div>
       </div>
       <Footer />

@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import HamburgerMenu from "../components/HamburgerMenu";
 import useIsMobile from "../hooks/useIsMobile";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function Page() {
   const isMobile = useIsMobile(850);
@@ -28,7 +30,7 @@ export default function Page() {
             />
           </div>
           <div className={styles.founderText}>
-            <h1>About The Company</h1>
+            <h1>The Company</h1>
             <p>
               Tech Wrench Web Solutions is dedicated to providing small
               businesses with high quality, custom web development services. We
@@ -41,7 +43,7 @@ export default function Page() {
         </div>
         <div className={styles.founder}>
           <div className={styles.founderText}>
-            <h1>About The Founder</h1>
+            <h1>The Founder</h1>
             <p>
               Carlo Berardelli established Tech Wrench Web Solutions in 2025. He
               graduated with a Business Degree in 2014 from California
@@ -67,11 +69,21 @@ export default function Page() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <div className={styles.ctas}>
-          <a className={styles.primary} href={"./contact"}>
-            Contact
-          </a>
-        </div>
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <div className={styles.ctas}>
+            <Link className={styles.primary} href={"/contact"}>
+              Contact
+            </Link>
+          </div>
+        </motion.a>
       </div>
       <Footer />
     </div>

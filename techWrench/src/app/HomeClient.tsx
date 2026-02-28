@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -12,7 +13,6 @@ import { motion } from "motion/react";
 // ToDo: //
 //////////
 // contact form button
-// add animations
 // add layering
 // add portfolio
 // 1.618 fonts
@@ -51,11 +51,21 @@ export default function HomeClient() {
             (SEO). This means that not only will customers see your site, they
             will have a premimum experience when they visit it.
           </p>
-          <div className={styles.ctas}>
-            <a className={styles.primary} href={"./contact"}>
-              Get Started
-            </a>
-          </div>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            <div className={styles.ctas}>
+              <Link className={styles.primary} href={"./contact"}>
+                Get Started
+              </Link>
+            </div>
+          </motion.a>
         </div>
       </section>
 
@@ -107,7 +117,9 @@ export default function HomeClient() {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className={styles.feature}>
-                  <h3 className={styles.bullet}>Search Engine Optimized (SEO)</h3>
+                  <h3 className={styles.bullet}>
+                    Search Engine Optimized (SEO)
+                  </h3>
                   <p className={styles.support}>
                     There's no point in having a stunning website if nobody is
                     going to see it. That's why we make sure each website is as
@@ -185,13 +197,23 @@ export default function HomeClient() {
               </div>
             </motion.div>
           </div>
-          <div className={styles.buttonContainer}>
-            <div className={styles.ctas}>
-              <a className={styles.primary} href={"/services"}>
-                Services
-              </a>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            <div className={styles.buttonContainer}>
+              <div className={styles.ctas}>
+                <Link className={styles.primary} href={"/services"}>
+                  Services
+                </Link>
+              </div>
             </div>
-          </div>
+          </motion.a>
         </section>
 
         <section className={styles.contact}>
