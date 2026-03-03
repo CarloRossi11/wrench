@@ -11,6 +11,7 @@ import { motion } from "motion/react";
 import Reveal from "../components/Reveal";
 
 export default function Page() {
+  const MotionLink = motion.create(Link);
   const isMobile = useIsMobile(850);
   return (
     <div className={styles.wrapper}>
@@ -42,12 +43,12 @@ export default function Page() {
           </div>
           <div className={styles.establishImage}>
             <Reveal direction="left">
-            <Image
-              src="/gptestablish.png"
-              alt="Establish Image"
-              width={200}
-              height={300}
-            />
+              <Image
+                src="/gptestablish.png"
+                alt="Establish Image"
+                width={200}
+                height={300}
+              />
             </Reveal>
           </div>
         </div>
@@ -83,12 +84,12 @@ export default function Page() {
           </div>
           <div className={styles.growImage}>
             <Reveal direction="left">
-            <Image
-              src="/gptgrow.png"
-              alt="Grow Image"
-              width={200}
-              height={300}
-            />
+              <Image
+                src="/gptgrow.png"
+                alt="Grow Image"
+                width={200}
+                height={300}
+              />
             </Reveal>
           </div>
         </div>
@@ -107,31 +108,31 @@ export default function Page() {
           </div>
           <div className={styles.expandImage}>
             <Reveal direction="left">
-            <Image
-              src="/gptexpand.png"
-              alt="Expand Image"
-              width={200}
-              height={300}
-            />
+              <Image
+                src="/gptexpand.png"
+                alt="Expand Image"
+                width={200}
+                height={300}
+              />
             </Reveal>
           </div>
         </div>
         <div className={styles.buttonContainer}>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20,
-            }}
-          >
-            <div className={styles.ctas}>
-              <Link className={styles.primary} href={"/contact"}>
-                Contact
-              </Link>
-            </div>
-          </motion.a>
+          <div className={styles.ctas}>
+            <MotionLink
+              className={styles.primary}
+              href="/contact"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
+            >
+              Contact
+            </MotionLink>
+          </div>
         </div>
       </div>
       <Footer />

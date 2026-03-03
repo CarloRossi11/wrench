@@ -11,6 +11,7 @@ import { motion } from "motion/react";
 import Reveal from "../components/Reveal";
 
 export default function Page() {
+  const MotionLink = motion.create(Link);
   const isMobile = useIsMobile(850);
   return (
     <div className={styles.wrapper}>
@@ -23,13 +24,13 @@ export default function Page() {
         <div className={styles.company}>
           <div className={styles.companyImage}>
             <Reveal direction="right">
-            <Image
-              src="/twsVerticalWhite.svg"
-              alt="Tech Wrench Web Solutions Logo"
-              width={300}
-              height={400}
-              priority
-            />
+              <Image
+                src="/twsVerticalWhite.svg"
+                alt="Tech Wrench Web Solutions Logo"
+                width={300}
+                height={400}
+                priority
+              />
             </Reveal>
           </div>
           <div className={styles.founderText}>
@@ -62,33 +63,33 @@ export default function Page() {
           </div>
           <div className={styles.founderImage}>
             <Reveal direction="left">
-            <Image
-              src="/founder.jpeg"
-              alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
-              width={300}
-              height={400}
-              priority
-            />
+              <Image
+                src="/founder.jpeg"
+                alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
+                width={300}
+                height={400}
+                priority
+              />
             </Reveal>
           </div>
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <motion.a
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <div className={styles.ctas}>
-            <Link className={styles.primary} href={"/contact"}>
-              Contact
-            </Link>
-          </div>
-        </motion.a>
+        <div className={styles.ctas}>
+          <MotionLink
+            className={styles.primary}
+            href="/contact"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            Contact
+          </MotionLink>
+        </div>
       </div>
       <Footer />
     </div>

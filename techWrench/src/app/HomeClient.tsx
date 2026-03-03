@@ -20,6 +20,8 @@ import { motion } from "motion/react";
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
 
+  const MotionLink = motion.create(Link);
+
   return (
     <div className={styles.page}>
       <div className={styles.navBar}>
@@ -51,21 +53,22 @@ export default function HomeClient() {
             (SEO). This means that not only will customers see your site, they
             will have a premimum experience when they visit it.
           </p>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20,
-            }}
-          >
-            <div className={styles.ctas}>
-              <Link className={styles.primary} href={"./contact"}>
-                Get Started
-              </Link>
-            </div>
-          </motion.a>
+
+          <div className={styles.ctas}>
+            <MotionLink
+              className={styles.primary}
+              href={"./contact"}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
+            >
+              Get Started
+            </MotionLink>
+          </div>
         </div>
       </section>
 
@@ -189,23 +192,25 @@ export default function HomeClient() {
               </div>
             </motion.div>
           </div>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20,
-            }}
-          >
+         
             <div className={styles.buttonContainer}>
               <div className={styles.ctas}>
-                <Link className={styles.primary} href={"/services"}>
-                  Services
-                </Link>
+                <MotionLink
+              className={styles.primary}
+              href={"./services"}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
+            >
+              Services
+            </MotionLink>
               </div>
             </div>
-          </motion.a>
+
         </section>
 
         <section className={styles.contact}>

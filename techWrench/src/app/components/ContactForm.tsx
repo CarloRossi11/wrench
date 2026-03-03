@@ -11,7 +11,7 @@ export default function ContactForm() {
     Object.keys(data)
       .map(
         (key) =>
-          encodeURIComponent(key) + "=" + encodeURIComponent(data[key] ?? "")
+          encodeURIComponent(key) + "=" + encodeURIComponent(data[key] ?? ""),
       )
       .join("&");
 
@@ -114,11 +114,9 @@ export default function ContactForm() {
         </div>
 
         {/* Submit */}
-        {/* <div className={styles.formButton}>
-          <button type="submit">Submit</button>
-        </div> */}
-        <div className={styles.ctas}>
-          <motion.a
+        <div className={styles.formButton}>
+          <motion.button
+            type="submit"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{
@@ -127,11 +125,9 @@ export default function ContactForm() {
               damping: 20,
             }}
           >
-                <a className={styles.primary} type="submit">
-                  Submit
-                </a>
-                </motion.a>
-              </div>
+            Submit
+          </motion.button>
+        </div>
 
         {success && (
           <p className={styles.successMessage}>
