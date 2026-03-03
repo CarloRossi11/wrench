@@ -8,6 +8,7 @@ import useIsMobile from "../hooks/useIsMobile";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+import Reveal from "../components/Reveal";
 
 export default function Page() {
   const isMobile = useIsMobile(850);
@@ -21,6 +22,7 @@ export default function Page() {
       <div className={styles.main}>
         <div className={styles.company}>
           <div className={styles.companyImage}>
+            <Reveal direction="right">
             <Image
               src="/twsVerticalWhite.svg"
               alt="Tech Wrench Web Solutions Logo"
@@ -28,6 +30,7 @@ export default function Page() {
               height={400}
               priority
             />
+            </Reveal>
           </div>
           <div className={styles.founderText}>
             <h1>The Company</h1>
@@ -58,6 +61,7 @@ export default function Page() {
             </p>
           </div>
           <div className={styles.founderImage}>
+            <Reveal direction="left">
             <Image
               src="/founder.jpeg"
               alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
@@ -65,6 +69,7 @@ export default function Page() {
               height={400}
               priority
             />
+            </Reveal>
           </div>
         </div>
       </div>

@@ -132,15 +132,7 @@ export default function HomeClient() {
         </section>
 
         <section className={styles.services}>
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <h1>Our Products</h1>
-          </motion.div>
-
+          <h1>Our Products</h1>
           <div className={styles.servicesContent}>
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -217,14 +209,7 @@ export default function HomeClient() {
         </section>
 
         <section className={styles.contact}>
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <h2>Get Started Today</h2>
-          </motion.div>
+          <h2>Get Started Today</h2>
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}

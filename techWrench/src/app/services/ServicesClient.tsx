@@ -8,6 +8,7 @@ import useIsMobile from "../hooks/useIsMobile";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+import Reveal from "../components/Reveal";
 
 export default function Page() {
   const isMobile = useIsMobile(850);
@@ -40,12 +41,14 @@ export default function Page() {
             </ul>
           </div>
           <div className={styles.establishImage}>
+            <Reveal direction="left">
             <Image
               src="/gptestablish.png"
               alt="Establish Image"
               width={200}
               height={300}
             />
+            </Reveal>
           </div>
         </div>
 
@@ -79,12 +82,14 @@ export default function Page() {
             </ul>
           </div>
           <div className={styles.growImage}>
+            <Reveal direction="left">
             <Image
               src="/gptgrow.png"
               alt="Grow Image"
               width={200}
               height={300}
             />
+            </Reveal>
           </div>
         </div>
         <div className={styles.expand}>
@@ -101,12 +106,14 @@ export default function Page() {
             </ul>
           </div>
           <div className={styles.expandImage}>
+            <Reveal direction="left">
             <Image
               src="/gptexpand.png"
               alt="Expand Image"
               width={200}
               height={300}
             />
+            </Reveal>
           </div>
         </div>
         <div className={styles.buttonContainer}>
