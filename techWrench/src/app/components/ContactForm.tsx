@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./contactForm.module.css";
+import { motion } from "motion/react";
 
 export default function ContactForm() {
   const [success, setSuccess] = useState(false);
@@ -113,9 +114,24 @@ export default function ContactForm() {
         </div>
 
         {/* Submit */}
-        <div className={styles.formButton}>
+        {/* <div className={styles.formButton}>
           <button type="submit">Submit</button>
-        </div>
+        </div> */}
+        <div className={styles.ctas}>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+                <a className={styles.primary} type="submit">
+                  Submit
+                </a>
+                </motion.a>
+              </div>
 
         {success && (
           <p className={styles.successMessage}>
