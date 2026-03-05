@@ -12,6 +12,7 @@ import { motion } from "motion/react";
 
 // ToDo: //
 //////////
+// about founder shading
 // Increase White Space
 // add portfolio
 // 1.618 fonts
