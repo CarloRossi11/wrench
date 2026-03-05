@@ -43,15 +43,11 @@ export default function HomeClient() {
           <h1>Beautiful, High Performing Websites</h1>
           <p className={styles.introText}>
             {" "}
-            At Tech Wrench, we specialize in quick loading, responsive, lead
-            generating websites for small businesses. Our websites are custom
-            designed and hand coded to fit your specific needs -no Wordpress or
-            AI slop. Our sites not only look great on both mobile and desktop
-            screens, but also load quickly and are Search Engine Optimized
-            (SEO). This means that not only will customers see your site, they
-            will have a premimum experience when they visit it.
+            We specialize in custom designed & developed lead generating
+            websites to fit your specific needs -no Wordpress or AI slop. Our
+            websites are built to reach more customers and deliver a premium
+            experience.
           </p>
-
           <div className={styles.ctas}>
             <MotionLink
               className={styles.primary}

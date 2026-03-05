@@ -78,6 +78,12 @@ a.primary {
   max-width: 400px;
 }
 
+.establishImage,
+.growImage,
+.expandImage Image{
+  border-radius: 1rem;
+}
+
 .buttonContainer {
   margin: 1rem;
   display: flex;
