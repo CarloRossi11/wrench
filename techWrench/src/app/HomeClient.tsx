@@ -12,7 +12,7 @@ import { motion } from "motion/react";
 
 // ToDo: //
 //////////
-// contact form button
+// contact form button font
 // add layering
 // add portfolio
 // 1.618 fonts

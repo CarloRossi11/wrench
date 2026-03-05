@@ -106,14 +106,14 @@ const HamburgerMenu: React.FC = () => {
             </motion.li>
 
             <motion.li variants={itemVariants}>
-              <Link href="/contact" onClick={() => setIsOpen(false)}>
-                Contact
+              <Link href="/services" onClick={() => setIsOpen(false)}>
+                Services
               </Link>
             </motion.li>
 
             <motion.li variants={itemVariants}>
-              <Link href="/services" onClick={() => setIsOpen(false)}>
-                Services
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
+                Contact
               </Link>
             </motion.li>
           </motion.ul>
