@@ -58,6 +58,7 @@
   padding: 1rem;
   color: #ffffff;
   background-color: #051D22;
+  box-shadow: -1px 1px 10px 0px #000000c8;
 }
 
 .introText {
@@ -99,6 +100,7 @@
   border-radius: 1rem;
   background-color: #CFC6BB;
   color: #051D22;
+  box-shadow: 0px 0px 10px 0px #000000c8;
 }
 
 .bullet {
@@ -119,6 +121,7 @@
   color: #fff;
   width: 100%;
   text-align: center;
+  box-shadow: 0px -1px 10px 0px #000000c8;
 }
 
 .services h1 {

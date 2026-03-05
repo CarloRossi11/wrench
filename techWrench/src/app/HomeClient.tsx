@@ -40,7 +40,6 @@ export default function HomeClient() {
             priority
           />
         </div>
-
         <div className={styles.introRight}>
           <h1>Beautiful, High Performing Websites</h1>
           <p className={styles.introText}>
@@ -192,25 +191,24 @@ export default function HomeClient() {
               </div>
             </motion.div>
           </div>
-         
-            <div className={styles.buttonContainer}>
-              <div className={styles.ctas}>
-                <MotionLink
-              className={styles.primary}
-              href={"./services"}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-              }}
-            >
-              Services
-            </MotionLink>
-              </div>
-            </div>
 
+          <div className={styles.buttonContainer}>
+            <div className={styles.ctas}>
+              <MotionLink
+                className={styles.primary}
+                href={"./services"}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                }}
+              >
+                Services
+              </MotionLink>
+            </div>
+          </div>
         </section>
 
         <section className={styles.contact}>

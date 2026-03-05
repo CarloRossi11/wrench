@@ -17,12 +17,14 @@ export default function Page() {
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
       <div className={styles.heroArea}>
-        <h1>SERVICES</h1>
-        <p>
-          Tech Wrench provides web development, digital solutions, and
-          technology support designed to help small businesses grow and stay
-          ahead in a fast-changing world.
-        </p>
+        <Reveal direction="right">
+          <h1>SERVICES</h1>
+          <p>
+            Tech Wrench provides web development, digital solutions, and
+            technology support designed to help small businesses grow and stay
+            ahead in a fast-changing world.
+          </p>
+        </Reveal>
       </div>
       <div className={styles.main}>
         <div className={styles.establish}>
@@ -42,14 +44,12 @@ export default function Page() {
             </ul>
           </div>
           <div className={styles.establishImage}>
-            <Reveal direction="left">
-              <Image
-                src="/gptestablish.png"
-                alt="Establish Image"
-                width={200}
-                height={300}
-              />
-            </Reveal>
+            <Image
+              src="/gptestablish.png"
+              alt="Establish Image"
+              width={200}
+              height={300}
+            />
           </div>
         </div>
 
@@ -83,14 +83,12 @@ export default function Page() {
             </ul>
           </div>
           <div className={styles.growImage}>
-            <Reveal direction="left">
-              <Image
-                src="/gptgrow.png"
-                alt="Grow Image"
-                width={200}
-                height={300}
-              />
-            </Reveal>
+            <Image
+              src="/gptgrow.png"
+              alt="Grow Image"
+              width={200}
+              height={300}
+            />
           </div>
         </div>
         <div className={styles.expand}>
@@ -107,14 +105,12 @@ export default function Page() {
             </ul>
           </div>
           <div className={styles.expandImage}>
-            <Reveal direction="left">
-              <Image
-                src="/gptexpand.png"
-                alt="Expand Image"
-                width={200}
-                height={300}
-              />
-            </Reveal>
+            <Image
+              src="/gptexpand.png"
+              alt="Expand Image"
+              width={200}
+              height={300}
+            />
           </div>
         </div>
         <div className={styles.buttonContainer}>

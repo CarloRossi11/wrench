@@ -17,21 +17,21 @@ export default function Page() {
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
       <div className={styles.heroArea}>
-        <h1>ABOUT</h1>
-        <p>Learn more about what Tech Wrench is and who is behind it.</p>
+        <Reveal direction="right">
+          <h1>ABOUT</h1>
+          <p>Learn more about what Tech Wrench is and who is behind it.</p>
+        </Reveal>
       </div>
       <div className={styles.main}>
         <div className={styles.company}>
           <div className={styles.companyImage}>
-            <Reveal direction="right">
-              <Image
-                src="/twsVerticalWhite.svg"
-                alt="Tech Wrench Web Solutions Logo"
-                width={300}
-                height={400}
-                priority
-              />
-            </Reveal>
+            <Image
+              src="/twsVerticalWhite.svg"
+              alt="Tech Wrench Web Solutions Logo"
+              width={300}
+              height={400}
+              priority
+            />
           </div>
           <div className={styles.founderText}>
             <h1>The Company</h1>
@@ -62,15 +62,13 @@ export default function Page() {
             </p>
           </div>
           <div className={styles.founderImage}>
-            <Reveal direction="left">
-              <Image
-                src="/founder.jpeg"
-                alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
-                width={300}
-                height={400}
-                priority
-              />
-            </Reveal>
+            <Image
+              src="/founder.jpeg"
+              alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
+              width={300}
+              height={400}
+              priority
+            />
           </div>
         </div>
       </div>
