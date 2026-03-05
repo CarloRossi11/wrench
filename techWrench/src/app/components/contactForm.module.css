@@ -95,8 +95,10 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
+  font: inherit; 
   height: 48px;
   cursor: pointer;
+  text-decoration: none;
   transition:
     background 0.2s,
     color 0.2s,
