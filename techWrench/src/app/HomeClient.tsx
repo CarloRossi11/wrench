@@ -9,10 +9,12 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
 import { motion } from "motion/react";
+import Navbar from "./components/Navbar";
 
 // ToDo: //
 //////////
-// about founder shading
+// Fix Header flicker
+// Paralax?
 // Increase White Space
 // add portfolio
 // 1.618 fonts
@@ -25,7 +27,7 @@ export default function HomeClient() {
   return (
     <div className={styles.page}>
       <div className={styles.navBar}>
-        {isMobile ? <HamburgerMenu /> : <Header />}
+        <Navbar/>
       </div>
 
       <section className={styles.intro}>

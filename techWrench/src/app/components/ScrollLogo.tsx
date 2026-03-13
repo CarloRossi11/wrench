@@ -14,11 +14,6 @@ interface ScrollLogoProps {
 }
 
 export default function ScrollLogo({
-  primarySrc,
-  secondarySrc,
-  alt = "Logo",
-  width = 160,
-  height = 40,
   triggerId = "hero",
 }: ScrollLogoProps) {
   const [scrolled, setScrolled] = useState(false);
