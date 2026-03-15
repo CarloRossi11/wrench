@@ -27,7 +27,7 @@ export default function HomeClient() {
   return (
     <div className={styles.page}>
       <div className={styles.navBar}>
-        <Navbar/>
+        <Navbar />
       </div>
 
       <section className={styles.intro}>
@@ -88,10 +88,21 @@ export default function HomeClient() {
               >
                 <div className={styles.feature}>
                   <h3 className={styles.bullet}>Load quickly</h3>
+                  <div className={styles.featureContent}>
+                  <Image
+                    id="hero"
+                    className={styles.logo}
+                    src="/Tech_Wrench_IconC-01.svg"
+                    alt="Tech Wrench Web Solutions Logo"
+                    width={50}
+                    height={50}
+                    priority
+                  />
                   <p className={styles.support}>
                     Every website we develop has a 95+ performance score, this
                     promotes user interaction and reduces churn.
                   </p>
+                  </div>
                 </div>
               </motion.div>
               <motion.div
@@ -101,13 +112,24 @@ export default function HomeClient() {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className={styles.feature}>
-                  <h3 className={styles.bullet}>
-                    Responsive Design for Mobile and Desktop
+                   <h3 className={styles.bullet}>
+                    Designed for Mobile & Desktop
                   </h3>
+                  <div className={styles.featureContent}>
+                  <Image
+                    id="hero"
+                    className={styles.logo}
+                    src="/Tech_Wrench_IconB-01.svg"
+                    alt="Tech Wrench Web Solutions Logo"
+                    width={50}
+                    height={50}
+                    priority
+                  />
                   <p className={styles.support}>
                     We design each site to look and behave beautifully on every
                     screen size, from the smallest phone to the largest monitor.
                   </p>
+                  </div>
                 </div>
               </motion.div>
               <motion.div
@@ -120,11 +142,22 @@ export default function HomeClient() {
                   <h3 className={styles.bullet}>
                     Search Engine Optimized (SEO)
                   </h3>
+                  <div className={styles.featureContent}>
+                  <Image
+                    id="hero"
+                    className={styles.logo}
+                    src="/Tech_Wrench_IconA-01.svg"
+                    alt="Tech Wrench Web Solutions Logo"
+                    width={50}
+                    height={50}
+                    priority
+                  />
                   <p className={styles.support}>
                     There's no point in having a stunning website if nobody is
                     going to see it. That's why we make sure each website is as
                     optimzed as possible to populate high in search results.
                   </p>
+                  </div>
                 </div>
               </motion.div>
             </div>
