@@ -18,6 +18,15 @@
     justify-content: space-around;
 }
 
+.button {
+  color: #3C6A79;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.button:hover {
+  color: #051D22;
+}
+
 /* Hamburger hidden on desktop */
 .hamburger {
     display: none;
