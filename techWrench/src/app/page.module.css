@@ -198,6 +198,7 @@ a.secondary {
 }
 
 .contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,6 +207,21 @@ a.secondary {
   background-color: #051D22;
   color: #fff;
   width: 100%;
+}
+
+.contactText {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlayImage {
+  object-fit: cover;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 40%, black 90%);
+  mask-image: linear-gradient(to bottom, transparent 40%, black 90%);
 }
 
 .contact h2 {
