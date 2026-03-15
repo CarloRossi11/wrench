@@ -4,15 +4,25 @@ import styles from "./about.module.css";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import Reveal from "../components/Reveal";
 import Navbar from "../components/Navbar";
+import { useRef } from "react";
 
 export default function Page() {
   const MotionLink = motion.create(Link);
+  const heroRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"], // tracks while hero is in view
+  });
+
+  // Move image upward as user scrolls down — adjust the output range to taste
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} ref={heroRef}>
       <div className={styles.navBar}>
         <Navbar />
       </div>
@@ -24,12 +34,14 @@ export default function Page() {
             <p>Learn more about what Tech Wrench is and who is behind it.</p>
           </div>
         </Reveal>
-        <Image
-          src="Tech_Wrench_Pattern-03.svg"
-          alt="Tech Wrench Web Solutions Logo"
-          fill
-          className={styles.overlayImage}
-        />
+        <motion.div className={styles.overlayImageWrapper} style={{ y }}>
+          <Image
+            src="Tech_Wrench_Pattern-03.svg"
+            alt="Tech Wrench Web Solutions Logo"
+            fill
+            className={styles.overlayImage}
+          />
+        </motion.div>
       </div>
 
       <div className={styles.main}>

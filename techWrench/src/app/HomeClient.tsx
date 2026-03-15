@@ -16,7 +16,6 @@ import Navbar from "./components/Navbar";
 // 1.618 fonts
 
 export default function HomeClient() {
-
   const MotionLink = motion.create(Link);
 
   return (
@@ -248,12 +247,14 @@ export default function HomeClient() {
               <ContactForm />
             </motion.div>
           </div>
-          <Image
-            src="Tech_Wrench_Pattern-02.svg"
-            alt="Tech Wrench Web Solutions Logo"
-            fill
-            className={styles.overlayImage}
-          />
+          <div className={styles.overlayImageWrapper}>
+            <Image
+              src="Tech_Wrench_Pattern-02.svg"
+              alt="Tech Wrench Web Solutions Logo"
+              fill
+              className={styles.overlayImage}
+            />
+          </div>
         </section>
       </main>
 

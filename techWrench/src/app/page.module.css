@@ -207,6 +207,7 @@ a.secondary {
   background-color: #051D22;
   color: #fff;
   width: 100%;
+  overflow: hidden;
 }
 
 .contactText {
@@ -294,15 +295,21 @@ a.secondary {
     padding-bottom: 2rem;
   }
 
+  .overlayImageWrapper {
+    position: absolute;
+    inset: -30%;
+    z-index: 0;
+  }
+
+  .overlayImage {
+    position: absolute;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 40%, black 80%);
+    mask-image: linear-gradient(to bottom, transparent 40%, black 80%);
+  }
+
   .servicesContent {
     flex-direction: column;
     text-align: center;
   }
 
 }
-
-/* @media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-} */

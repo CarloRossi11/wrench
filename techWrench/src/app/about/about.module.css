@@ -7,8 +7,13 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  box-shadow: -0px 1px 10px 0px #000000c8;
   overflow: hidden;
+}
+
+.overlayImageWrapper {
+  position: absolute;
+  inset: -30%;
+  z-index: 1;
 }
 
 .overlayImage {
