@@ -3,36 +3,35 @@
 import { useState } from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence, Variants } from "motion/react";
 import ScrollLogo from "./ScrollLogo";
 
+const MotionLink = motion.create(Link);
+
+const menuVariants: Variants = {
+  hidden: {
+    y: -40,
+    opacity: 0,
+    transition: { duration: 0.25, ease: [0.4, 0, 0.2, 1] },
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.35,
+      ease: [0.22, 1, 0.36, 1],
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { y: -15, opacity: 0 },
+  visible: { y: 0, opacity: 1 },
+};
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const MotionLink = motion.create(Link);
-
-  const menuVariants: Variants = {
-    hidden: {
-      y: -40,
-      opacity: 0,
-      transition: { duration: 0.25, ease: [0.4, 0, 0.2, 1] },
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.35,
-        ease: [0.22, 1, 0.36, 1],
-        staggerChildren: 0.08,
-      },
-    },
-  };
-
-  const itemVariants: Variants = {
-    hidden: { y: -15, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
-  };
 
   return (
     <nav className={styles.navbar}>
@@ -59,24 +58,20 @@ export default function Navbar() {
 
       {/* Logo */}
       <div className={styles.logo}>
-      <MotionLink
-        href="/"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        transition={{
-          type: "spring",
-          stiffness: 300,
-          damping: 20,
-        }}
-      >
-        <ScrollLogo
-          primarySrc="/logo-light.png"
-          secondarySrc="/logo-dark.png"
-          width={160}
-          height={40}
-          triggerId="hero"
-        />
-      </MotionLink>
+        <MotionLink
+          href="/"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
+          <ScrollLogo
+            primarySrc="/logo-light.png"
+            secondarySrc="/logo-dark.png"
+            width={160}
+            height={40}
+            triggerId="hero"
+          />
+        </MotionLink>
       </div>
 
       {/* Desktop Right Links */}
@@ -126,19 +121,16 @@ export default function Navbar() {
                 Home
               </Link>
             </motion.li>
-
             <motion.li variants={itemVariants}>
               <Link href="/about" onClick={() => setIsOpen(false)}>
                 About
               </Link>
             </motion.li>
-
             <motion.li variants={itemVariants}>
               <Link href="/services" onClick={() => setIsOpen(false)}>
                 Services
               </Link>
             </motion.li>
-
             <motion.li variants={itemVariants}>
               <Link href="/contact" onClick={() => setIsOpen(false)}>
                 Contact

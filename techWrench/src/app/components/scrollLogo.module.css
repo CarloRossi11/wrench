@@ -1,33 +1,57 @@
 .logoWrapper {
   position: relative;
-  width: 160px;
-  height: 50px;
+  width: 200px;
+  /* match your widest logo */
+  height: 75px;
+  /* match your tallest logo */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+  /* prevent squishing in flex navbar */
 }
 
 .logo {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  /* center both logos */
   max-height: 75px;
   object-fit: contain;
   transition: opacity 0.4s ease, transform 0.4s ease;
+  will-change: opacity, transform;
+  /* hint browser to composite on GPU */
 }
 
 .visible {
   opacity: 1;
-  transform: scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
   pointer-events: auto;
 }
 
 .hidden {
   opacity: 0;
-  transform: scale(0.95);
+  transform: translateX(-50%) translateY(-50%) scale(0.95);
   pointer-events: none;
 }
 
 @media (max-width: 850px) {
-  .logo{
-      left: 0;
+  .logoWrapper {
+    width: 75px;
+    /* shrink to primary logo size on mobile */
+  }
+
+  .logo {
+    left: 0;
+    transform: translateX(0) translateY(-50%) scale(1);
+  }
+
+  .visible {
+    transform: translateX(0) translateY(-50%) scale(1);
+  }
+
+  .hidden {
+    transform: translateX(0) translateY(-50%) scale(0.95);
   }
 }

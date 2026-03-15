@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./scrollLogo.module.css";
 
@@ -10,13 +10,19 @@ interface ScrollLogoProps {
   alt?: string;
   width?: number;
   height?: number;
-  triggerId?: string; // element to watch (hero section id)
+  triggerId?: string;
 }
 
 export default function ScrollLogo({
+  primarySrc,
+  secondarySrc,
+  alt = "Logo",
+  width = 200,
+  height = 75,
   triggerId = "hero",
 }: ScrollLogoProps) {
   const [scrolled, setScrolled] = useState(false);
+  const scrolledRef = useRef(false); // ✅ moved to top level of component
 
   useEffect(() => {
     const target = document.getElementById(triggerId);
@@ -24,16 +30,18 @@ export default function ScrollLogo({
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // When hero leaves viewport → switch logo
-        setScrolled(!entry.isIntersecting);
+        const isScrolled = !entry.isIntersecting;
+        if (isScrolled !== scrolledRef.current) {
+          scrolledRef.current = isScrolled;
+          setScrolled(isScrolled);
+        }
       },
-      { threshold: 0.1 },
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" },
     );
 
     observer.observe(target);
-
     return () => observer.disconnect();
-  }, [triggerId]);
+  }, [triggerId]); // scrolledRef is stable, no need to include it
 
   return (
     <div className={styles.logoWrapper}>
