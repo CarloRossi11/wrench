@@ -16,12 +16,22 @@ export default function Page() {
   return (
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
+
       <div className={styles.heroArea}>
         <Reveal direction="right">
-          <h1>ABOUT</h1>
-          <p>Learn more about what Tech Wrench is and who is behind it.</p>
+          <div className={styles.heroText}>
+            <h1>ABOUT</h1>
+            <p>Learn more about what Tech Wrench is and who is behind it.</p>
+          </div>
         </Reveal>
+        <Image
+          src="Tech_Wrench_Pattern-03.svg"
+          alt="Tech Wrench Web Solutions Logo"
+          fill
+          className={styles.overlayImage}
+        />
       </div>
+
       <div className={styles.main}>
         <div className={styles.company}>
           <div className={styles.companyImage}>

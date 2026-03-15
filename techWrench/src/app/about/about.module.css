@@ -1,4 +1,5 @@
 .heroArea {
+  position: relative;
   background-color: #051D22;
   height: 500px;
   color: #CFC6BB;
@@ -7,6 +8,19 @@
   justify-content: center;
   padding: 2rem;
   box-shadow: -0px 1px 10px 0px #000000c8;
+  overflow: hidden;
+}
+
+.overlayImage {
+  object-fit: cover;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to right, transparent 20%, black 70%);
+  mask-image: linear-gradient(to right, transparent 20%, black 70%);
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
 }
 
 .company {
@@ -81,11 +95,20 @@ a.primary {
   margin: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .heroArea {
+    height: 400px;
+  }
+
+  .overlayImage {
+    -webkit-mask-image: linear-gradient(to right, transparent 30%, black 80%);
+    mask-image: linear-gradient(to right, transparent 30%, black 80%);
   }
 
   .company {

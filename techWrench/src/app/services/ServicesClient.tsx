@@ -18,21 +18,29 @@ export default function Page() {
       {isMobile ? <HamburgerMenu /> : <Header />}
       <div className={styles.heroArea}>
         <Reveal direction="right">
-          <h1>SERVICES</h1>
-          <p>
-            Tech Wrench provides web development, branding, and
-            marketing support designed to help small businesses grow and stay
-            ahead in a technology-driven world.
-          </p>
+          <div className={styles.heroText}>
+            <h1>SERVICES</h1>
+            <p>
+              Tech Wrench provides web development, branding, and marketing
+              support designed to help small businesses grow and stay ahead in a
+              technology-driven world.
+            </p>
+          </div>
         </Reveal>
+        <Image
+          src="Tech_Wrench_Pattern-03.svg"
+          alt="Tech Wrench Web Solutions Logo"
+          fill
+          className={styles.overlayImage}
+        />
       </div>
       <div className={styles.main}>
         <div className={styles.establish}>
           <div className={styles.establishText}>
-            <h2>
-              Starter Package
-            </h2>
-            <h3><i>Starting at $1,000 +$100/month</i></h3>
+            <h2>Starter Package</h2>
+            <h3>
+              <i>Starting at $1,000 +$100/month</i>
+            </h3>
             <ul>
               <li>Custom Website + Basic SEO</li>
               <li>Google Business Profile Optimization</li>
@@ -49,17 +57,17 @@ export default function Page() {
               alt="Establish Image"
               width={200}
               height={300}
-              style= {{ borderRadius: "1rem" }}
+              style={{ borderRadius: "1rem" }}
             />
           </div>
         </div>
 
         <div className={styles.grow}>
           <div className={styles.growText}>
-            <h2>
-              Brand Refresh
-            </h2>
-            <h3><i>Contact for pricing</i></h3>
+            <h2>Brand Refresh</h2>
+            <h3>
+              <i>Contact for pricing</i>
+            </h3>
             <ul>
               <li>
                 Work with our design expert to create a new brand book,
@@ -89,16 +97,16 @@ export default function Page() {
               alt="Grow Image"
               width={200}
               height={300}
-              style= {{ borderRadius: "1rem" }}
+              style={{ borderRadius: "1rem" }}
             />
           </div>
         </div>
         <div className={styles.expand}>
           <div className={styles.expandText}>
-            <h2>
-              Marketing Boost
-            </h2>
-            <h3><i>Contact for pricing</i></h3>
+            <h2>Marketing Boost</h2>
+            <h3>
+              <i>Contact for pricing</i>
+            </h3>
             <ul>
               <li>Automated E-mail marketing</li>
               <li>SMS (text message) services</li>
@@ -112,7 +120,7 @@ export default function Page() {
               alt="Expand Image"
               width={200}
               height={300}
-              style= {{ borderRadius: "1rem" }}
+              style={{ borderRadius: "1rem" }}
             />
           </div>
         </div>
