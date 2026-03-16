@@ -52,7 +52,7 @@ export default function Page() {
           <div className={styles.establishText}>
             <h2>Starter Package</h2>
             <h3>
-              <i>Starting at $1,000 +$100/month</i>
+              {/* <i>Starting at $1,000 +$100/month</i> */}
             </h3>
             <ul>
               <li>Custom Website + Basic SEO</li>
@@ -79,7 +79,7 @@ export default function Page() {
           <div className={styles.growText}>
             <h2>Brand Refresh</h2>
             <h3>
-              <i>Contact for pricing</i>
+              {/* <i>Contact for pricing</i> */}
             </h3>
             <ul>
               <li>
@@ -118,7 +118,7 @@ export default function Page() {
           <div className={styles.expandText}>
             <h2>Marketing Boost</h2>
             <h3>
-              <i>Contact for pricing</i>
+              {/* <i>Contact for pricing</i> */}
             </h3>
             <ul>
               <li>Automated E-mail marketing</li>

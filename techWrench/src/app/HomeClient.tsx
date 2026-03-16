@@ -41,7 +41,7 @@ export default function HomeClient() {
           <p className={styles.introText}>
             {" "}
             We specialize in custom designed & developed lead generating
-            websites to fit your specific needs -no Wordpress or AI slop. Our
+            websites to fit your specific needs; no Wordpress or AI slop. Our
             websites are built to reach more customers and deliver a premium
             experience.
           </p>
@@ -169,7 +169,7 @@ export default function HomeClient() {
               <div className={styles.establishText}>
                 <h2>Starter Package</h2>
                 <h3>
-                  <i>Starting at $1,000 + $100/month</i>
+                  {/* <i>Starting at $1,000 + $100/month</i> */}
                 </h3>
                 <p>
                   {" "}
@@ -187,7 +187,7 @@ export default function HomeClient() {
               <div className={styles.growText}>
                 <h2>Brand Refresh</h2>
                 <h3>
-                  <i>Contact for pricing</i>
+                  {/* <i>Contact for pricing</i> */}
                 </h3>
                 <p>
                   Work with our design expert to create a new brand book,
@@ -206,7 +206,7 @@ export default function HomeClient() {
               <div className={styles.expandText}>
                 <h2>Marketing Boost</h2>
                 <h3>
-                  <i>Contact for pricing</i>
+                  {/* <i>Contact for pricing</i> */}
                 </h3>
                 <p>
                   Reach even more of your target market with email and text
