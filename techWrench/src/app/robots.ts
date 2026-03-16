@@ -5,7 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://techwrench.co/sitemap.xml",
+    sitemap: "https://www.techwrench.co/sitemap.xml",
   };
 }

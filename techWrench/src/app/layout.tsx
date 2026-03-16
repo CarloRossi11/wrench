@@ -11,6 +11,7 @@ const pressura = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.techwrench.co"),
   title: "Tech Wrench - Website Development Services",
   description:
     "Tech Wrench offers professional website development services, specializing in custom and lead generation websites to help your business grow online.",
@@ -33,13 +34,14 @@ export const metadata: Metadata = {
     title: "Tech Wrench - Website Development Services",
     description:
       "Professional website development services specializing in custom and lead generation websites.",
-    url: "https://techwrench.co",
+    url: "https://www.techwrench.co",
     siteName: "Tech Wrench",
     images: [
       {
-        url: "https://techwrench.co/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
+        alt: "Tech Wrench Web Solutions",
       },
     ],
     locale: "en_US",
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
     title: "Tech Wrench - Website Development Services",
     description:
       "Professional website development services specializing in custom and lead generation websites.",
-    images: ["https://techwrench.co/og-image.png"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -70,7 +72,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Tech Wrench",
-              url: "https://techwrench.co",
+              url: "https://www.techwrench.co",
               telephone: "+1-412-965-8201",
               address: {
                 "@type": "PostalAddress",
@@ -80,10 +82,11 @@ export default function RootLayout({
                 postalCode: "15421",
                 addressCountry: "US",
               },
-              areaServed: {
-                "@type": "AdministrativeArea",
-                name: "Pittsburgh, PA",
-              },
+              areaServed: [
+                { "@type": "AdministrativeArea", name: "Pittsburgh, PA" },
+                { "@type": "AdministrativeArea", name: "Pennsylvania" },
+                { "@type": "Country", name: "United States" },
+              ],
               serviceType: [
                 "Website Development",
                 "Custom Websites",
@@ -92,7 +95,6 @@ export default function RootLayout({
             }),
           }}
         />
-
         {children}
       </body>
     </html>
