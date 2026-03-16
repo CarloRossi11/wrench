@@ -10,7 +10,6 @@ import Navbar from "./components/Navbar";
 
 // ToDo: //
 //////////
-// Paralax?
 // Increase White Space
 // add portfolio
 // 1.618 fonts
