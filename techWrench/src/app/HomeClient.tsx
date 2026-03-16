@@ -167,9 +167,7 @@ export default function HomeClient() {
             >
               <div className={styles.establishText}>
                 <h2>Starter Package</h2>
-                <h3>
-                  {/* <i>Starting at $1,000 + $100/month</i> */}
-                </h3>
+                <h3>{/* <i>Starting at $1,000 + $100/month</i> */}</h3>
                 <p>
                   {" "}
                   Our flagship product described above, includes the responsive
@@ -185,9 +183,7 @@ export default function HomeClient() {
             >
               <div className={styles.growText}>
                 <h2>Brand Refresh</h2>
-                <h3>
-                  {/* <i>Contact for pricing</i> */}
-                </h3>
+                <h3>{/* <i>Contact for pricing</i> */}</h3>
                 <p>
                   Work with our design expert to create a new brand book,
                   including primary and secondary logos, fonts, and a color
@@ -204,9 +200,7 @@ export default function HomeClient() {
             >
               <div className={styles.expandText}>
                 <h2>Marketing Boost</h2>
-                <h3>
-                  {/* <i>Contact for pricing</i> */}
-                </h3>
+                <h3>{/* <i>Contact for pricing</i> */}</h3>
                 <p>
                   Reach even more of your target market with email and text
                   services, google ads, and social media assistance.
@@ -237,14 +231,8 @@ export default function HomeClient() {
         <section className={styles.contact}>
           <div className={styles.contactText}>
             <h2>Get Started Today</h2>
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <ContactForm />
-            </motion.div>
+
+            <ContactForm />
           </div>
           <div className={styles.overlayImageWrapper}>
             <Image
