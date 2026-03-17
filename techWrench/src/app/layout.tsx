@@ -78,6 +78,7 @@ export default function RootLayout({
               image: "https://www.techwrench.co/og-image.png",
               description:
                 "Tech Wrench builds custom websites and lead generation websites for small businesses across Pittsburgh, PA and the United States.",
+              priceRange: "$$",
               telephone: "+1-412-965-8201",
               email: "carlo@techwrench.co",
               address: {
