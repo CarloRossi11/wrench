@@ -1,6 +1,7 @@
 .main {
   min-height: 10vh;
   width: 100%;
+  margin-top: -1px;
   padding: 2rem;
   color: #051D22;
   background-color: #CFC6BB;
