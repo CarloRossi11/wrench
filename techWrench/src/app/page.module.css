@@ -212,8 +212,8 @@ a.secondary {
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
-  padding-bottom: calc(2rem + 3px);
-  margin-bottom: -3px;
+  padding-bottom: 2rem;
+  margin-bottom: -2px;
   background-color: #051D22;
   color: #fff;
   width: 100%;
