@@ -213,7 +213,6 @@ a.secondary {
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-bottom: -2px;
   background-color: #051D22;
   color: #fff;
   width: 100%;
@@ -231,8 +230,8 @@ a.secondary {
 .overlayImage {
   object-fit: cover;
   z-index: 1;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 40%, black 90%);
-  mask-image: linear-gradient(to bottom, transparent 40%, black 90%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 40%, black 90%,transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 40%, black 90%,transparent 100%);
 }
 
 .contact h2 {
