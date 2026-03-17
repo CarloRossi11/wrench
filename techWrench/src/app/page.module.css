@@ -230,8 +230,8 @@ a.secondary {
 .overlayImage {
   object-fit: cover;
   z-index: 1;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 10%, #051D22 90%);
-  mask-image: linear-gradient(to bottom, transparent 10%, #051D22 90%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 20%, #051D22 90%);
+  mask-image: linear-gradient(to bottom, transparent 20%, #051D22 90%);
 }
 
 .contact h2 {

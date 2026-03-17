@@ -1,9 +1,13 @@
 .main {
+  position: relative;
   min-height: 10vh;
   width: 100%;
+  margin-top: -1px;
   padding: 2rem;
+  padding-top: calc(2rem + 8px);
   color: #051D22;
   background-color: #CFC6BB;
+  z-index: 1;
 }
 
 .footer {
@@ -13,14 +17,16 @@
 }
 
 .icon {
-filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(406%) hue-rotate(148deg) brightness(91%) contrast(88%);  transition:
+  filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(406%) hue-rotate(148deg) brightness(91%) contrast(88%);
+  transition:
     background 0.2s,
     color 0.2s,
     border-color 0.2s;
 }
 
 .icon:hover {
-filter: brightness(0) saturate(100%) invert(4%) sepia(60%) saturate(5463%) hue-rotate(177deg) brightness(96%) contrast(96%);}
+  filter: brightness(0) saturate(100%) invert(4%) sepia(60%) saturate(5463%) hue-rotate(177deg) brightness(96%) contrast(96%);
+}
 
 .footer a {
   align-items: center;
