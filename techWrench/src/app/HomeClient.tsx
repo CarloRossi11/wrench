@@ -156,7 +156,7 @@ export default function HomeClient() {
                     <p className={styles.support}>
                       There's no point in having a stunning website if nobody is
                       going to see it. That's why we make sure each website is
-                      as optimzed as possible to populate high in search
+                      as optimized as possible to populate high in search
                       results.
                     </p>
                   </div>

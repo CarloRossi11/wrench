@@ -90,7 +90,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <p>©2025 Tech Wrench All rights reserved.</p>
+          <p>©2026 Tech Wrench All rights reserved.</p>
           {/* <p>
             Website developed by{" "}
             <a
