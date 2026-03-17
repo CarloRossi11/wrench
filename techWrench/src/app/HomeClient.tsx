@@ -10,9 +10,7 @@ import Navbar from "./components/Navbar";
 
 // ToDo: //
 //////////
-// Increase White Space
 // add portfolio
-// 1.618 fonts
 
 export default function HomeClient() {
   const MotionLink = motion.create(Link);

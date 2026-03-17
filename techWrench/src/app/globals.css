@@ -2,10 +2,23 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-pressura: 'GT Pressura Bold', serif;
+
+  /* Type scale — Perfect Fourth (1.333) */
+  --text-sm:   0.75rem;   /* 12px */
+  --text-base: 1rem;      /* 16px */
+  --text-md:   1.333rem;  /* 21px */
+  --text-lg:   1.777rem;  /* 28px */
+  --text-xl:   2.369rem;  /* 38px */
+  --text-2xl:  3.157rem;  /* 51px */
 }
 
-/*
-Color Palette
+h1 { font-size: var(--text-xl); line-height: 1.1; }
+h2 { font-size: var(--text-lg); line-height: 1.2; }
+h3 { font-size: var(--text-md); line-height: 1.3; }
+p  { font-size: var(--text-base); line-height: 1.6; }
+small { font-size: var(--text-sm); line-height: 1.5; }
+
+/* Color Palette
 #CFC6BB -beigeish
 #051D22 
 #3C6A79
@@ -13,13 +26,6 @@ Color Palette
 #E2E3E2 -grayish
 https://angel-rs.github.io/css-color-filter-generator/
 */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 html,
 body {
@@ -46,8 +52,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@media (max-width: 600px) {
+  h1 { font-size: var(--text-lg); line-height: 1.15; }
+  h2 { font-size: var(--text-md); line-height: 1.25; }
+  h3 { font-size: var(--text-base); line-height: 1.35; }
 }

@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./footer.module.css";
-import { getMapsLink } from "../utils/maps";
 import { motion } from "motion/react";
-const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
 
 export default function Footer() {
-  const mapsLink = getMapsLink(address);
   const MotionLink = motion.create(Link);
   return (
     <div className={styles.main}>
