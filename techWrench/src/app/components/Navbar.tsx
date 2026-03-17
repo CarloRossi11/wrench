@@ -58,20 +58,16 @@ export default function Navbar() {
 
       {/* Logo */}
       <div className={styles.logo}>
-        <MotionLink
-          href="/"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        >
+        <Link href="/">
           <ScrollLogo
-            primarySrc="/logo-light.png"
-            secondarySrc="/logo-dark.png"
+            primarySrc="/logoBlueT.svg"
+            secondarySrc="/twsHorizontalBlue.svg"
+            alt="Tech Wrench logo"
             width={160}
             height={40}
             triggerId="hero"
           />
-        </MotionLink>
+        </Link>
       </div>
 
       {/* Desktop Right Links */}

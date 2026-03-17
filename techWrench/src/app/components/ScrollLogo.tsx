@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 import styles from "./scrollLogo.module.css";
 
 interface ScrollLogoProps {
@@ -22,7 +23,7 @@ export default function ScrollLogo({
   triggerId = "hero",
 }: ScrollLogoProps) {
   const [scrolled, setScrolled] = useState(false);
-  const scrolledRef = useRef(false); // ✅ moved to top level of component
+  const scrolledRef = useRef(false);
 
   useEffect(() => {
     const target = document.getElementById(triggerId);
@@ -41,25 +42,29 @@ export default function ScrollLogo({
 
     observer.observe(target);
     return () => observer.disconnect();
-  }, [triggerId]); // scrolledRef is stable, no need to include it
+  }, [triggerId]);
 
   return (
-    <div className={styles.logoWrapper}>
+    <motion.div
+      className={styles.logoWrapper}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
       <Image
-        src="/logoBlueT.svg"
-        alt="Tech Wrench logo"
+        src={primarySrc}
+        alt={alt}
         width={75}
         height={75}
         className={`${styles.logo} ${scrolled ? styles.hidden : styles.visible}`}
       />
-
       <Image
-        src="/twsHorizontalBlue.svg"
-        alt="Tech Wrench Web Solutions logo"
-        width={200}
-        height={75}
+        src={secondarySrc}
+        alt={alt}
+        width={width}
+        height={height}
         className={`${styles.logo} ${scrolled ? styles.visible : styles.hidden}`}
       />
-    </div>
+    </motion.div>
   );
 }
