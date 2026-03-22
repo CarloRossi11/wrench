@@ -31,7 +31,7 @@ export default function Page() {
         <Reveal direction="right">
           <div className={styles.heroText}>
             <h1>ABOUT</h1>
-            <p>Learn more about what Tech Wrench is and who is behind it.</p>
+            <p>Learn more about what Tech Wrench is and who's behind it.</p>
           </div>
         </Reveal>
         <motion.div className={styles.overlayImageWrapper} style={{ y }}>
@@ -63,7 +63,7 @@ export default function Page() {
               understand the unique challenges that small businesses face when
               trying to establish an online presence, and we are committed to
               helping our clients overcome those challenges through effective
-              website design, SEO, and branding strategies.
+              website design, branding, and marketing strategies.
             </p>
           </div>
         </div>
@@ -79,8 +79,8 @@ export default function Page() {
               development, and an additional 5 years of account managment and
               customer support experience. With his diverse background and
               skillset, Carlo is uniquely qualified to help small businesses
-              establish a strong online presence through custom websites,
-              effective SEO strategies, and compelling branding.
+              establish a strong online presence by combining technical
+              expertise with a deep understanding of achieving business goals.
             </p>
           </div>
           <div className={styles.founderImage}>

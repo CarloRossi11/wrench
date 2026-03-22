@@ -32,8 +32,7 @@ export default function Page() {
           <div className={styles.heroText}>
             <h1>SERVICES</h1>
             <p>
-              Tech Wrench provides web development, branding, and marketing
-              support designed to help small businesses grow and stay ahead in a
+              Web solutions designed to help small businesses thrive in a
               technology-driven world.
             </p>
           </div>
@@ -51,17 +50,16 @@ export default function Page() {
         <div className={styles.establish}>
           <div className={styles.establishText}>
             <h2>Starter Package</h2>
-            <h3>
-              {/* <i>Starting at $1,000 +$100/month</i> */}
-            </h3>
+            <h3>{/* <i>Starting at $1,000 +$100/month</i> */}</h3>
             <ul>
-              <li>Custom Website + Basic SEO</li>
+              <li>Custom Website</li>
               <li>Google Business Profile Optimization</li>
-              <li>Monthly Website Maintenance</li>
+              <li>Monthly Website Maintenance
               <ul>
-                <li>Security Updates</li>
-                <li>Content Updates (up to 5 monthly)</li>
+                <li>Security updates</li>
+                <li>Content edits (up to 5/month)</li>
               </ul>
+              </li>
             </ul>
           </div>
           <div className={styles.establishImage}>
@@ -78,30 +76,19 @@ export default function Page() {
         <div className={styles.grow}>
           <div className={styles.growText}>
             <h2>Brand Refresh</h2>
-            <h3>
-              {/* <i>Contact for pricing</i> */}
-            </h3>
+            <h3>{/* <i>Contact for pricing</i> */}</h3>
             <ul>
               <li>
                 Work with our design expert to create a new brand book,
                 including:
-              </li>
               <ul>
                 <li>Primary and secondary logos</li>
                 <li>Color palette</li>
                 <li>Fonts</li>
+                <li>Icons</li>
               </ul>
-              <li>Create/update social media profiles</li>
-              <ul>
-                <li>Facebok</li>
-                <li>Instagram</li>
-                <li>LinkedIn</li>
-                <ul>
-                  <p>
-                    <i>* includes 1 post for each platform</i>
-                  </p>
-                </ul>
-              </ul>
+              </li>
+              <li>Incorporate designs into socials and website</li>
             </ul>
           </div>
           <div className={styles.growImage}>
@@ -117,12 +104,10 @@ export default function Page() {
         <div className={styles.expand}>
           <div className={styles.expandText}>
             <h2>Marketing Boost</h2>
-            <h3>
-              {/* <i>Contact for pricing</i> */}
-            </h3>
+            <h3>{/* <i>Contact for pricing</i> */}</h3>
             <ul>
-              <li>Automated E-mail marketing</li>
-              <li>SMS (text message) services</li>
+              <li>E-mail marketing</li>
+              <li>SMS (text) services</li>
               <li>Google Ads</li>
               <li>Social Media Ads</li>
             </ul>

@@ -38,8 +38,8 @@ export default function HomeClient() {
           <p className={styles.introText}>
             {" "}
             We specialize in custom designed & developed lead generating
-            websites to fit your specific needs; no Wordpress or AI slop. Our
-            websites are built to reach more customers and deliver a premium
+            websites to fit your specific needs. Our
+            entire digital toolkit is built to reach more customers and deliver a premium
             experience.
           </p>
           <div className={styles.ctas}>
@@ -64,10 +64,10 @@ export default function HomeClient() {
         <section className={styles.weDo}>
           <h2>Website Development Service</h2>
           <p>
-            Our flagship service is custom website development for small
+            Our primary solution is custom website development for small
             businesses. We work closely with our clients to understand their
-            unique needs and goals, and then create a website that not only
-            looks great but also drives results. Our websites:
+            unique needs and goals, and then create a website that looks great and
+            drives results. Our websites:
           </p>
           <div className={styles.features}>
             <div>
@@ -154,10 +154,9 @@ export default function HomeClient() {
                       />
                     </svg>
                     <p className={styles.support}>
-                      There's no point in having a stunning website if nobody is
-                      going to see it. That's why we make sure each website is
-                      as optimized as possible to populate high in search
-                      results.
+                      There's no point in having a stunning website if nobody
+                      will see it. We make sure each website is optimized to
+                      populate high in search results.
                     </p>
                   </div>
                 </div>
@@ -180,8 +179,8 @@ export default function HomeClient() {
                 <h3>{/* <i>Starting at $1,000 + $100/month</i> */}</h3>
                 <p>
                   {" "}
-                  Our flagship product described above, includes the responsive
-                  design, SEO, plus hosting, maintenance, and updates.{" "}
+                  Our flagship product described above. Includes responsive
+                  design, SEO, maintenance, and updates.{" "}
                 </p>
               </div>
             </motion.div>
@@ -196,9 +195,8 @@ export default function HomeClient() {
                 <h3>{/* <i>Contact for pricing</i> */}</h3>
                 <p>
                   Work with our design expert to create a new brand book,
-                  including primary and secondary logos, fonts, and a color
-                  palette. We'll incorporate your custom elements and take your
-                  website, social media, and other content to the next level.
+                  including logos, icons, and colors. We'll utilize your custom
+                  elements and take your web presence to the next level.{" "}
                 </p>
               </div>
             </motion.div>
@@ -212,8 +210,8 @@ export default function HomeClient() {
                 <h2>Marketing Boost</h2>
                 <h3>{/* <i>Contact for pricing</i> */}</h3>
                 <p>
-                  Reach even more of your target market with email and text
-                  services, google ads, and social media assistance.
+                  Expand your reach with email and text services, google ads,
+                  and social media assistance.
                 </p>
               </div>
             </motion.div>

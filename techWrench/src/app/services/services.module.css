@@ -73,6 +73,12 @@ a.primary {
   padding: 1rem;
 }
 
+.establish h2,
+.grow h2,
+.expand h2 {
+  padding-bottom: 1rem;
+}
+
 .establishText,
 .growText,
 .expandText {
@@ -101,6 +107,56 @@ a.primary {
   margin: 1rem;
   display: flex;
   justify-content: center;
+}
+
+.establishText ul,
+.growText ul,
+.expandText ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.establishText ul > li,
+.growText ul > li,
+.expandText ul > li {
+  position: relative;
+  padding-left: 1.75rem;
+  line-height: 1.6;      /* matches your p tag */
+}
+
+.establishText ul > li::before,
+.growText ul > li::before,
+.expandText ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("/Tech_Wrench_IconC-01.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.establishText ul ul,
+.growText ul ul,
+.expandText ul ul {
+  padding-left: 1.25rem;
+}
+
+.establishText ul ul > li,
+.growText ul ul > li,
+.expandText ul ul > li {
+  padding-left: 0;
+  list-style-type: circle;
+  margin-left: 1rem;  /* keeps them indented under the parent */
+  font-weight: 600;
+}
+
+.establishText ul ul > li::before,
+.growText ul ul > li::before,
+.expandText ul ul > li::before {
+  display: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
