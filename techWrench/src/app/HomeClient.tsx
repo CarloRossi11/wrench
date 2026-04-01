@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import { motion } from "motion/react";
 import Navbar from "./components/Navbar";
+import { useState, useEffect } from "react";
 
 // ToDo: //
 //////////
@@ -14,6 +15,14 @@ import Navbar from "./components/Navbar";
 
 export default function HomeClient() {
   const MotionLink = motion.create(Link);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsLargeScreen(window.innerWidth > 600);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -38,9 +47,8 @@ export default function HomeClient() {
           <p className={styles.introText}>
             {" "}
             We specialize in custom designed & developed lead generating
-            websites to fit your specific needs. Our
-            entire digital toolkit is built to reach more customers and deliver a premium
-            experience.
+            websites to fit your specific needs. Our entire digital toolkit is
+            built to reach more customers and deliver a premium experience.
           </p>
           <div className={styles.ctas}>
             <MotionLink
@@ -66,8 +74,8 @@ export default function HomeClient() {
           <p>
             Our primary solution is custom website development for small
             businesses. We work closely with our clients to understand their
-            unique needs and goals, and then create a website that looks great and
-            drives results. Our websites:
+            unique needs and goals, and then create a website that looks great
+            and drives results. Our websites:
           </p>
           <div className={styles.features}>
             <div>
@@ -171,44 +179,53 @@ export default function HomeClient() {
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
               viewport={{ once: true, amount: 0.2 }}
             >
               <div className={styles.establishText}>
                 <h2>Starter Package</h2>
-                <h3>{/* <i>Starting at $1,000 + $100/month</i> */}</h3>
+                <h3></h3>
                 <p>
-                  {" "}
                   Our flagship product described above. Includes responsive
-                  design, SEO, maintenance, and updates.{" "}
+                  design, SEO, maintenance, and updates.
                 </p>
               </div>
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: isLargeScreen ? 0.15 : 0,
+              }}
               viewport={{ once: true, amount: 0.2 }}
             >
               <div className={styles.growText}>
                 <h2>Brand Refresh</h2>
-                <h3>{/* <i>Contact for pricing</i> */}</h3>
+                <h3></h3>
                 <p>
                   Work with our design expert to create a new brand book,
                   including logos, icons, and colors. We'll utilize your custom
-                  elements and take your web presence to the next level.{" "}
+                  elements and take your web presence to the next level.
                 </p>
               </div>
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: isLargeScreen ? 0.3 : 0,
+              }}
               viewport={{ once: true, amount: 0.2 }}
             >
               <div className={styles.expandText}>
                 <h2>Marketing Boost</h2>
-                <h3>{/* <i>Contact for pricing</i> */}</h3>
+                <h3></h3>
                 <p>
                   Expand your reach with email and text services, google ads,
                   and social media assistance.
