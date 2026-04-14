@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 // ToDo: //
 //////////
 // add portfolio
+// Device Mockup created from <a href="https://deviceframes.com/templates/iphone-13">iPhone mockups</a>
 
 export default function HomeClient() {
   const MotionLink = motion.create(Link);
@@ -174,7 +175,7 @@ export default function HomeClient() {
         </section>
 
         <section className={styles.services}>
-          <h1>Our Products</h1>
+          <h1>Products</h1>
           <div className={styles.servicesContent}>
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -250,6 +251,143 @@ export default function HomeClient() {
                 Services
               </MotionLink>
             </div>
+          </div>
+        </section>
+
+        <section className={styles.portfolio}>
+          <h1>Portfolio</h1>
+          <div className={styles.portfolioContent}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: isLargeScreen ? 0.3 : 0,
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.portfolioItem}>
+                <h2>Cali Cleanerz</h2>
+                <div className={styles.portfolioImage}>
+                  <Image
+                    src="/califrames.png"
+                    alt="Screenshot of a website built for Cali Cleanerz"
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                <p>
+                  Similar to the Tech Wrench site with a split landing that has the contact form in the initial view. The page also features a live Instagram Preview and a link to their affiliate shop.
+                </p>
+                <div className={styles.buttonContainer}>
+                  <div className={styles.ctas}>
+                    <MotionLink
+                      className={styles.secondary}
+                      target="blank"
+                      href="https://www.calicleanerz.com"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                    >
+                      Vistit Website
+                    </MotionLink>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: isLargeScreen ? 0.15 : 0,
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.portfolioItem}>
+                <h2>Mitchell Builds</h2>
+                <div className={styles.portfolioImage}>
+                  <Image
+                    src="/mitchellframes.png"
+                    alt="Screenshot of a website built for Mitchell Builds"
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                <p>
+                  A bold and modern design with a custom color scheme and logo. The site focuses on showcasing the client's work with a parallax image title animation.
+                </p>
+                <div className={styles.buttonContainer}>
+                  <div className={styles.ctas}>
+                    <MotionLink
+                      className={styles.secondary}
+                      target="blank"
+                      href="https://mitchellbuilds.netlify.app/"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                    >
+                      Vistit Website
+                    </MotionLink>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: 0,
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.portfolioItem}>
+                <h2>Woodwright Millwork</h2>
+                <div className={styles.portfolioImage}>
+                  <Image
+                    src="/woodwrightframes.png"
+                    alt="Screenshot of a website built for Woodwright Millwork"
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                <p>
+                  Another take on letting the product speak for itself with a custom built carousel and fade effects.
+                </p>
+                <div className={styles.buttonContainer}>
+                  <div className={styles.ctas}>
+                    <MotionLink
+                      className={styles.secondary}
+                      target="blank"
+                      href="https://woodwright.netlify.app/"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                    >
+                      Vistit Website
+                    </MotionLink>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
