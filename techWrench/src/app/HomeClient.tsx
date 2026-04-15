@@ -9,11 +9,6 @@ import { motion } from "motion/react";
 import Navbar from "./components/Navbar";
 import { useState, useEffect } from "react";
 
-// ToDo: //
-//////////
-// add portfolio
-// Device Mockup created from <a href="https://deviceframes.com/templates/iphone-13">iPhone mockups</a>
-
 export default function HomeClient() {
   const MotionLink = motion.create(Link);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -256,6 +251,7 @@ export default function HomeClient() {
 
         <section className={styles.portfolio}>
           <h1>Portfolio</h1>
+          {/* Device Mockups created from <a href="https://deviceframes.com/templates/iphone-13">iPhone mockups</a> */}
           <div className={styles.portfolioContent}>
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -278,7 +274,9 @@ export default function HomeClient() {
                   />
                 </div>
                 <p>
-                  Similar to the Tech Wrench site with a split landing that has the contact form in the initial view. The page also features a live Instagram Preview and a link to their affiliate shop.
+                  Similar to the Tech Wrench site with a split landing that has
+                  the contact form in the initial view. The page also features a
+                  live Instagram Preview and a link to their affiliate shop.
                 </p>
                 <div className={styles.buttonContainer}>
                   <div className={styles.ctas}>
@@ -322,7 +320,9 @@ export default function HomeClient() {
                   />
                 </div>
                 <p>
-                  A bold and modern design with a custom color scheme and logo. The site focuses on showcasing the client's work with a parallax image title animation.
+                  A bold and modern design with a custom color scheme and logo.
+                  The site focuses on showcasing the client's work with a
+                  parallax image title animation.
                 </p>
                 <div className={styles.buttonContainer}>
                   <div className={styles.ctas}>
@@ -366,7 +366,10 @@ export default function HomeClient() {
                   />
                 </div>
                 <p>
-                  Another take on letting the product speak for itself with a custom built carousel and fade effects.
+                  Another take on letting the product speak for itself, this
+                  website features a custom built carousel with fade effects.
+                  This website also has a custom shuffle component to quickly
+                  view different images.
                 </p>
                 <div className={styles.buttonContainer}>
                   <div className={styles.ctas}>
