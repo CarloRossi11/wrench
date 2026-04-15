@@ -292,7 +292,7 @@ export default function HomeClient() {
                         damping: 20,
                       }}
                     >
-                      Vistit Website
+                      Visit Website
                     </MotionLink>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export default function HomeClient() {
                         damping: 20,
                       }}
                     >
-                      Vistit Website
+                      Visit Website
                     </MotionLink>
                   </div>
                 </div>
@@ -385,7 +385,7 @@ export default function HomeClient() {
                         damping: 20,
                       }}
                     >
-                      Vistit Website
+                      Visit Website
                     </MotionLink>
                   </div>
                 </div>
