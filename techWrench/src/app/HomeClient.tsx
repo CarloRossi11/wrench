@@ -274,7 +274,7 @@ export default function HomeClient() {
                   />
                 </div>
                 <p>
-                  Similar to the Tech Wrench site with a split landing that has
+                  Similar to the Tech Wrench site with a split landing but with
                   the contact form in the initial view. The page also features a
                   live Instagram Preview and a link to their affiliate shop.
                 </p>
@@ -367,9 +367,8 @@ export default function HomeClient() {
                 </div>
                 <p>
                   Another take on letting the product speak for itself, this
-                  website features a custom built carousel with fade effects.
-                  This website also has a custom shuffle component to quickly
-                  view different images.
+                  website features a carousel with fade effects and
+                  a custom shuffle component to quickly view different images.
                 </p>
                 <div className={styles.buttonContainer}>
                   <div className={styles.ctas}>
