@@ -161,8 +161,9 @@ a.primary {
 
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #3C6A79;
-    color: #CFC6BB;
+    background-color: #CFC6BB;
+    color: #051D22;
+    border: 1px solid #051D22;
   }
 
 }
