@@ -39,9 +39,10 @@ export default function Page() {
         </Reveal>
         <motion.div className={styles.overlayImageWrapper} style={{ y }}>
           <Image
-            src="Tech_Wrench_Pattern-03.svg"
+            src="/Tech_Wrench_Pattern-03.svg"
             alt="Tech Wrench Web Solutions Logo"
             fill
+            priority
             className={styles.overlayImage}
           />
         </motion.div>
