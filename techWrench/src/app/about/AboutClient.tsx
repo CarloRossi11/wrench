@@ -77,7 +77,7 @@ export default function Page() {
               University of Pennsylvania, and later received his Software
               Engineering Immersive Certificate from General Assembly in 2020.
               Carlo has over 5 years of professional experience in web
-              development, and an additional 5 years of account managment and
+              development, and an additional 5 years of account management and
               customer support experience. With his diverse background and
               skillset, Carlo is uniquely qualified to help small businesses
               establish a strong online presence by combining technical
