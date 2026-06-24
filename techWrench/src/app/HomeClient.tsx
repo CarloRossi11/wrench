@@ -371,7 +371,7 @@ export default function HomeClient() {
         </section>
 
         <section className={styles.crm}>
-          <h1>Every Lead. One Platform.</h1>
+          <h1>Every Lead on One Platform</h1>
           <p>
             Most local businesses juggle phone calls, text messages, website
             inquiries, Facebook messages, and Google chats across multiple apps.
@@ -380,6 +380,7 @@ export default function HomeClient() {
           </p>
           <div className={styles.crmFeatures}>
             <motion.div
+              className={styles.crmFeatureWrapper}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
@@ -396,6 +397,7 @@ export default function HomeClient() {
               </div>
             </motion.div>
             <motion.div
+              className={styles.crmFeatureWrapper}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
@@ -413,6 +415,7 @@ export default function HomeClient() {
               </div>
             </motion.div>
             <motion.div
+              className={styles.crmFeatureWrapper}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
@@ -422,13 +425,14 @@ export default function HomeClient() {
                 <h3 className={styles.crmTitle}>Lead Pipeline Management</h3>
                 <div className={styles.crmFeatureContent}>
                   <p>
-                    Track every prospect from inquiry to estimate to completed
-                    job so you always know where your opportunities stand.
+                    Track every prospect from inquiry, to estimate, to completed
+                    job, and beyond so you always know where your opportunities stand.
                   </p>
                 </div>
               </div>
             </motion.div>
             <motion.div
+              className={styles.crmFeatureWrapper}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
