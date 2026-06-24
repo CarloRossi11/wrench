@@ -1,8 +1,3 @@
-.main {
-  padding: 2rem;
-  color: #051D22;
-}
-
 .heroArea {
   position: relative;
   background-color: #051D22;
@@ -31,6 +26,74 @@
 .heroText {
   position: relative;
   z-index: 2;
+}
+
+.main {
+  color: #FFFFFF;
+}
+
+
+
+/* Content */
+.services {
+  padding: 2rem 1rem;
+  /* background-color: #3c6a79; */
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  /* box-shadow: 0px -1px 10px 0px #000000c8, 0px 1px 10px 0px #000000c8; */
+}
+
+.services h1 {
+  padding: 1rem 0rem;
+}
+
+.servicesContent {
+  display: flex;
+  justify-content: center;
+}
+
+.servicesContent h3 {
+  padding: 0.5rem;
+}
+
+.solution {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 400px;
+  border-radius: 1rem;
+  background-color: #051d22;
+}
+
+.solution i{
+color: #cfc6bb;
+}
+
+.beige { 
+  color: #cfc6bb;
+}
+
+.included {
+  padding: 1rem;
+}
+
+.included li{
+  text-align: left;
+  padding-top: .5rem;
+}
+
+.add { 
+  padding-top: 2rem;
+  color: #051D22;
+}
+
+/* Buttons */
+.buttonContainer {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .ctas {
@@ -65,100 +128,6 @@ a.primary {
   margin: 1rem;
 }
 
-.establish,
-.grow,
-.expand {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.establish h2,
-.grow h2,
-.expand h2 {
-  padding-bottom: 1rem;
-}
-
-.establishText,
-.growText,
-.expandText {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  max-width: 400px;
-}
-
-.establishImage,
-.growImage,
-.expandImage {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  max-width: 400px;
-}
-
-.buttonContainer {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-.establishText ul,
-.growText ul,
-.expandText ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.establishText ul > li,
-.growText ul > li,
-.expandText ul > li {
-  position: relative;
-  padding-left: 1.75rem;
-  line-height: 1.6;      /* matches your p tag */
-}
-
-.establishText ul > li::before,
-.growText ul > li::before,
-.expandText ul > li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.2em;
-  width: 1rem;
-  height: 1rem;
-  background-image: url("/Tech_Wrench_IconC-01.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.establishText ul ul,
-.growText ul ul,
-.expandText ul ul {
-  padding-left: 1.25rem;
-}
-
-.establishText ul ul > li,
-.growText ul ul > li,
-.expandText ul ul > li {
-  padding-left: 0;
-  list-style-type: circle;
-  margin-left: 1rem;  /* keeps them indented under the parent */
-  font-weight: 600;
-}
-
-.establishText ul ul > li::before,
-.growText ul ul > li::before,
-.expandText ul ul > li::before {
-  display: none;
-}
-
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background-color: #CFC6BB;
@@ -179,24 +148,8 @@ a.primary {
     mask-image: linear-gradient(to right, transparent 30%, black 80%);
   }
 
-  .establish,
-  .grow,
-  .expand {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  .establishText,
-  .growText,
-  .expandText {
-    display: flex;
-    width: 100%;
-  }
-
-  .establishImage,
-  .growImage,
-  .expandImage {
-    display: none;
+  .servicesContent {
+    flex-direction: column;
+    text-align: center;
   }
 }

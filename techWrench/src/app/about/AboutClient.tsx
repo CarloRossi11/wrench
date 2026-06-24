@@ -59,12 +59,15 @@ export default function Page() {
           <div className={styles.founderText}>
             <h1>The Company</h1>
             <p>
-              Tech Wrench Web Solutions is dedicated to providing small
-              businesses with high quality, custom web development services. We
-              understand the unique challenges that small businesses face when
-              trying to establish an online presence, and we are committed to
-              helping our clients overcome those challenges through effective
-              website design, branding, and marketing strategies.
+              Tech Wrench helps local service businesses get found online,
+              capture every lead, and convert more inquiries into paying
+              customers. We combine high-performance websites, Google Business
+              Profile optimization, review generation, lead management, and
+              marketing automation into a complete customer acquisition system
+              designed to drive measurable growth. By leveraging modern
+              technology and proven growth strategies, we help our clients build
+              trust, improve visibility, and create a more predictable pipeline
+              of new business.
             </p>
           </div>
         </div>

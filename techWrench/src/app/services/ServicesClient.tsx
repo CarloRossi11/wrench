@@ -7,12 +7,19 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
 import Reveal from "../components/Reveal";
 import Navbar from "../components/Navbar";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Page() {
   const MotionLink = motion.create(Link);
-
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const heroRef = useRef(null);
+
+    useEffect(() => {
+      const check = () => setIsLargeScreen(window.innerWidth > 600);
+      check();
+      window.addEventListener("resize", check);
+      return () => window.removeEventListener("resize", check);
+    }, []);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -48,100 +55,156 @@ export default function Page() {
         </motion.div>
       </div>
       <div className={styles.main}>
-        <div className={styles.establish}>
-          <div className={styles.establishText}>
-            <h2>Starter Package</h2>
-            <h3>{/* <i>Starting at $1,000 +$100/month</i> */}</h3>
-            <ul>
-              <li>Custom Website</li>
-              <li>Google Business Profile Optimization</li>
-              <li>Monthly Website Maintenance
-              <ul>
-                <li>Security updates</li>
-                <li>Content edits (up to 5/month)</li>
-              </ul>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.establishImage}>
-            <Image
-              src="/gptestablish.png"
-              alt="Establish Image"
-              width={200}
-              height={300}
-              style={{ borderRadius: "1rem" }}
-            />
-          </div>
-        </div>
-
-        <div className={styles.grow}>
-          <div className={styles.growText}>
-            <h2>Brand Refresh</h2>
-            <h3>{/* <i>Contact for pricing</i> */}</h3>
-            <ul>
-              <li>
-                Work with our design expert to create a new brand book,
-                including:
-              <ul>
-                <li>Primary and secondary logos</li>
-                <li>Color palette</li>
-                <li>Fonts</li>
-                <li>Icons</li>
-              </ul>
-              </li>
-              <li>Incorporate designs into socials and website</li>
-            </ul>
-          </div>
-          <div className={styles.growImage}>
-            <Image
-              src="/gptgrow.png"
-              alt="Grow Image"
-              width={200}
-              height={300}
-              style={{ borderRadius: "1rem" }}
-            />
-          </div>
-        </div>
-        <div className={styles.expand}>
-          <div className={styles.expandText}>
-            <h2>Marketing Boost</h2>
-            <h3>{/* <i>Contact for pricing</i> */}</h3>
-            <ul>
-              <li>E-mail marketing</li>
-              <li>SMS (text) services</li>
-              <li>Google Ads</li>
-              <li>Social Media Ads</li>
-            </ul>
-          </div>
-          <div className={styles.expandImage}>
-            <Image
-              src="/gptexpand.png"
-              alt="Expand Image"
-              width={200}
-              height={300}
-              style={{ borderRadius: "1rem" }}
-            />
-          </div>
-        </div>
-        <div className={styles.buttonContainer}>
-          <div className={styles.ctas}>
-            <MotionLink
-              className={styles.primary}
-              href="/contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-              }}
+        <div className={styles.services}>
+          <div className={styles.servicesContent}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
-              Contact
-            </MotionLink>
+              <div className={styles.solution}>
+                <h2>Tier 1: The Essential Presence </h2>
+                {/* <h3>(Capture & Trust)</h3> */}
+                <p>$1,500 setup fee + $149/month</p>
+                <i className={styles.beige}>Get Found and Never Miss a Lead</i>
+                <div className={styles.included}>
+                  <ul>
+                    Includes:
+                    <li>Custom high-performing website</li>
+                    <li>
+                      Local SEO Foundation & Google Business Profile
+                      optimization
+                    </li>
+                    <li>Website hosting, security, and monthly maintenance</li>
+                    <li>
+                      <b>Missed-Call Text Back:</b>automatically text back
+                      missed calls to never miss an opportunity
+                    </li>
+                  </ul>
+                </div>
+                <p className={styles.beige}>
+                  We build your site, manage your hosting, keep your Google
+                  profile updated, and activate Missed-Call Text Back, so you
+                  stop losing leads to your competitors when you can't answer
+                  the phone.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: isLargeScreen ? 0.15 : 0,
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.solution}>
+                <h2>
+                  Tier 2: The Growth Engine <i>*Recommended Best Seller</i>
+                </h2>
+                {/* <h3>(Convert & Automate)</h3> */}
+                <p>$2,500 setup fee + $499/month</p>
+                <i className={styles.beige}>
+                  Automate Follow-Up and Convert More Customers{" "}
+                </i>
+                <div className={styles.included}>
+                  <ul>
+                    Includes:
+                    <li>Everything in Tier 1</li>
+                    <li>
+                      <b>Automated Review Generation:</b> SMS/Email review
+                      campaigns to win the Google Maps ranking game.
+                    </li>
+                    <li>
+                      <b>Unified Lead Inbox:</b> All FB messages, Google chats,
+                      SMS, and website leads in one screen.
+                    </li>
+                    <li>
+                      <b>Lead Nurturing & Automation:</b> Instant automated
+                      follow-ups, pipeline tracking, and online calendar
+                      booking.
+                    </li>
+                  </ul>
+                </div>
+                <p className={styles.beige}>
+                  We build your entire digital foundation, automate your Google
+                  review generation to win the local maps game, and provide a
+                  unified CRM inbox to manage all your customer conversations in
+                  one place.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                delay: isLargeScreen ? 0.3 : 0,
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.solution}>
+                <h2>Tier 3: The Local Authority </h2>
+                {/* <h3>(Scale & Accelerate)</h3> */}
+                <p>$3,500 setup fee + $799/month</p>
+                <i className={styles.beige}>
+                  Generate More Leads and Unlock Hidden Revenue
+                </i>
+                <div className={styles.included}>
+                  <ul>
+                    Includes:
+                    <li>Everything in Tiers 1 & 2</li>
+                    <li>
+                      <b>Google Local Services Ads (GLA):</b> Setup and weekly
+                      management
+                    </li>
+                    <li>
+                      <b>Database Reactivation:</b> Running seasonal email/SMS
+                      campaigns to their existing customer list to unearth
+                      "hidden" revenue.
+                    </li>
+                    <li>
+                      <b>Referral & Loyalty Systems:</b> Automated post-job
+                      referral request workflows.
+                    </li>
+                  </ul>
+                </div>
+                <p className={styles.beige}>
+                  We handle your website, automation, reviews, and manage your
+                  Google Local Services Ads to actively flood your pipeline with
+                  qualified, inbound leads.
+                </p>
+              </div>
+            </motion.div>
+            
           </div>
-        </div>
+          <h3 className={styles.add}>Ask about our Brand Refresh add on!</h3>
+          </div>
+          <div className={styles.buttonContainer}>
+            <div className={styles.ctas}>
+              <MotionLink
+                className={styles.primary}
+                href="/contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                }}
+              >
+                Contact
+              </MotionLink>
+            </div>
+          </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
