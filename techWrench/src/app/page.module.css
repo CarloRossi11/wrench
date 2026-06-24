@@ -3,13 +3,12 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #051D22;
-  --button-secondary-hover: #3C6A79;
+  --button-primary-hover: #051d22;
+  --button-secondary-hover: #3c6a79;
 
   min-height: 100vh;
   width: 100%;
 }
-
 
 @media (prefers-color-scheme: dark) {
   .page {
@@ -17,8 +16,8 @@
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
-    --button-primary-hover: #3C6A79;
-    --button-secondary-hover: #051D22;
+    --button-primary-hover: #3c6a79;
+    --button-secondary-hover: #051d22;
     padding-top: 64px;
     /* match navbar height */
   }
@@ -57,7 +56,7 @@
   text-align: center;
   padding: 1rem;
   color: #ffffff;
-  background-color: #051D22;
+  background-color: #051d22;
   box-shadow: -1px 1px 10px 0px #000000c8;
 }
 
@@ -73,6 +72,118 @@
   width: 100%;
 }
 
+/* Problems */
+.problems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.leaks {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.leak {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #3c6a79;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px 0px #000000c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.leakHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #ffffff;
+  text-align: left;
+  gap: 0.75rem;
+}
+
+.leakHeader h3 {
+  margin: 0;
+  flex: 1;
+}
+
+.leakIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+  color: #cfc6bb;
+}
+
+/* Tiers */
+.services {
+  padding: 2rem 1rem;
+  background-color: #3c6a79;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0px -1px 10px 0px #000000c8, 0px 1px 10px 0px #000000c8;
+}
+
+.services h1 {
+  padding: 1rem 0rem;
+}
+
+.servicesContent {
+  display: flex;
+  justify-content: center;
+}
+
+.servicesContent h3 {
+  padding: 0.5rem;
+}
+
+.solution {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 400px;
+  border-radius: 1rem;
+  background-color: #051d22;
+}
+
+.solution i{
+color: #cfc6bb;
+}
+
+.beige { 
+  color: #cfc6bb;
+}
+
+.included {
+  padding: 1rem;
+}
+
+.included li{
+  text-align: left;
+  padding-top: .5rem;
+}
+
+/* Website Highlights */
 .weDo {
   display: flex;
   flex-direction: column;
@@ -85,7 +196,7 @@
 }
 
 .weDo p {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -98,8 +209,8 @@
   margin: 2rem 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #CFC6BB;
-  color: #051D22;
+  background-color: #cfc6bb;
+  color: #051d22;
   box-shadow: 0px 0px 10px 0px #000000c8;
   display: flex;
   flex-direction: column;
@@ -130,44 +241,11 @@
   padding-left: 1rem;
 }
 
-.services {
-  padding: 2rem 1rem;
-  background-color: #3C6A79;
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  box-shadow: 0px -1px 10px 0px #000000c8, 0px 1px 10px 0px #000000c8;
-}
-
-.services h1 {
-  padding: 1rem 0rem;
-}
-
-.servicesContent {
-  display: flex;
-  justify-content: center;
-}
-
-.servicesContent h3 {
-  padding: .5rem;
-}
-
-.establishText,
-.growText,
-.expandText {
-  margin: 1rem 1rem;
-  padding: 1rem;
-  text-align: center;
-  max-width: 400px;
-  border-radius: 1rem;
-  background-color: #051D22;
-}
-
+/* Portfolio */
 .portfolio {
   padding: 2rem 1rem;
   background-color: #fff;
-  color: #051D22;
+  color: #051d22;
   width: 100%;
   text-align: center;
 }
@@ -189,7 +267,7 @@
   max-width: 400px;
   border-radius: 1rem;
   background-color: #fff;
-  color: #051D22;
+  color: #051d22;
 }
 
 .portfolioImage {
@@ -198,6 +276,7 @@
   aspect-ratio: 1 / 1; /* Match your image's natural ratio — adjust if needed */
 }
 
+/* Buttons */
 .ctas {
   display: flex;
   justify-content: center;
@@ -209,10 +288,7 @@
   height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -223,28 +299,29 @@
 }
 
 a.primary {
-  background-color: #CFC6BB;
-  color: #051D22;
+  background-color: #cfc6bb;
+  color: #051d22;
   border: var(--foreground);
   gap: 8px;
   margin: 1rem;
 }
 
 a.secondary {
-  background-color: #051D22;
-  color: #CFC6BB;
+  background-color: #051d22;
+  color: #cfc6bb;
   border: var(--foreground);
   gap: 8px;
   margin: 1rem;
 }
 
+/* Contact */
 .contact {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  background-color: #051D22;
+  background-color: #051d22;
   color: #fff;
   width: 100%;
   overflow: hidden;
@@ -262,8 +339,8 @@ a.secondary {
 .overlayImage {
   object-fit: cover;
   z-index: 1;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 20%, #051D22 90%);
-  mask-image: linear-gradient(to bottom, transparent 20%, #051D22 90%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 20%, #051d22 90%);
+  mask-image: linear-gradient(to bottom, transparent 20%, #051d22 90%);
 }
 
 .contact h2 {
@@ -273,15 +350,15 @@ a.secondary {
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #051D22;
-    color: #CFC6BB;
-    border: 1px solid #CFC6BB;
+    background-color: #051d22;
+    color: #cfc6bb;
+    border: 1px solid #cfc6bb;
   }
 
   a.secondary:hover {
-    background-color: #CFC6BB;
-    color: #051D22;
-    border: 1px solid #051D22;
+    background-color: #cfc6bb;
+    color: #051d22;
+    border: 1px solid #051d22;
   }
 
   .footer a:hover {
@@ -348,7 +425,8 @@ a.secondary {
     mask-image: linear-gradient(to bottom, transparent 40%, black 80%);
   }
 
-  .servicesContent, .portfolioContent {
+  .servicesContent,
+  .portfolioContent {
     flex-direction: column;
     text-align: center;
   }
@@ -358,5 +436,4 @@ a.secondary {
     padding: 0rem 1rem;
     background: linear-gradient(to top, #CFC6BB 0%, transparent 30%);
   } */
-
 }

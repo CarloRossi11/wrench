@@ -20,9 +20,9 @@ small { font-size: var(--text-sm); line-height: 1.5; }
 
 /* Color Palette
 #CFC6BB -beigeish
-#051D22 
-#3C6A79
-#FFFFFF 
+#051D22 -dark blue
+#3C6A79 -light blue
+#FFFFFF -white
 #E2E3E2 -grayish
 https://angel-rs.github.io/css-color-filter-generator/
 */
@@ -38,6 +38,14 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-pressura), serif;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-pressura), serif;
 }
 

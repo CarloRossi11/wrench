@@ -5,13 +5,14 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import Navbar from "./components/Navbar";
 import { useState, useEffect } from "react";
 
 export default function HomeClient() {
   const MotionLink = motion.create(Link);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const check = () => setIsLargeScreen(window.innerWidth > 600);
@@ -39,12 +40,12 @@ export default function HomeClient() {
           />
         </div>
         <div className={styles.introRight}>
-          <h1>Beautiful, High Performing Websites</h1>
+          <h1>Get Found. Capture Every Lead. Win More Customers.</h1>
           <p className={styles.introText}>
-            {" "}
-            We specialize in custom designed & developed lead generating
-            websites to fit your specific needs. Our entire digital toolkit is
-            built to reach more customers and deliver a premium experience.
+            From automated lead follow-up and high-performance websites to
+            Google Business optimization and review generation, Tech Wrench
+            equips local service businesses with the digital tools they need to
+            get found online, convert more leads, and grow with confidence.
           </p>
           <div className={styles.ctas}>
             <MotionLink
@@ -58,20 +59,285 @@ export default function HomeClient() {
                 damping: 20,
               }}
             >
-              Get Started
+              Start Growing Today
             </MotionLink>
           </div>
         </div>
       </section>
 
       <main className={styles.main}>
-        <section className={styles.weDo}>
-          <h2>Website Development Service</h2>
+        <section className={styles.problems}>
+          <h2>The Hidden Leaks in Your Customer Pipeline</h2>
           <p>
-            Our primary solution is custom website development for small
-            businesses. We work closely with our clients to understand their
-            unique needs and goals, and then create a website that looks great
-            and drives results. Our websites:
+            Most local businesses don't have a lead problem—they have a lead
+            conversion problem. Missed calls, slow follow-up, weak online
+            visibility, and failing to leverage your existing customers quietly
+            cost businesses customers every day.
+          </p>
+          <div className={styles.leaks}>
+            <div className={styles.leak}>
+              <button
+                className={styles.leakHeader}
+                onClick={() => setOpenIndex(openIndex === 0 ? null : 0)}
+              >
+                <h3>Buried Local Visibility</h3>
+                <motion.span
+                  className={styles.leakIcon}
+                  animate={{ rotate: openIndex === 0 ? 45 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  +
+                </motion.span>
+              </button>
+              <AnimatePresence initial={false}>
+                {openIndex === 0 && (
+                  <motion.p
+                    initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                    animate={{
+                      opacity: 1,
+                      height: "auto",
+                      marginTop: "0.75rem",
+                    }}
+                    exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    style={{ overflow: "hidden" }}
+                  >
+                    An outdated website, weak local SEO, too few reviews, and an
+                    under-optimized Google Business Profile make it harder for
+                    customers to discover and trust your business.
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className={styles.leak}>
+              <button
+                className={styles.leakHeader}
+                onClick={() => setOpenIndex(openIndex === 1 ? null : 1)}
+              >
+                <h3>Missed Phone Opportunities</h3>
+                <motion.span
+                  className={styles.leakIcon}
+                  animate={{ rotate: openIndex === 1 ? 45 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  +
+                </motion.span>
+              </button>
+              <AnimatePresence initial={false}>
+                {openIndex === 1 && (
+                  <motion.p
+                    initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                    animate={{
+                      opacity: 1,
+                      height: "auto",
+                      marginTop: "0.75rem",
+                    }}
+                    exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    style={{ overflow: "hidden" }}
+                  >
+                    Over half of inbound business calls go unanswered after
+                    business hours or when you're out in the field. Without an
+                    instant response, those homeowners immediately move on to
+                    your closest competitor.
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className={styles.leak}>
+              <button
+                className={styles.leakHeader}
+                onClick={() => setOpenIndex(openIndex === 2 ? null : 2)}
+              >
+                <h3>Slow Follow-Up</h3>
+                <motion.span
+                  className={styles.leakIcon}
+                  animate={{ rotate: openIndex === 2 ? 45 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  +
+                </motion.span>
+              </button>
+              <AnimatePresence initial={false}>
+                {openIndex === 2 && (
+                  <motion.p
+                    initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                    animate={{
+                      opacity: 1,
+                      height: "auto",
+                      marginTop: "0.75rem",
+                    }}
+                    exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    style={{ overflow: "hidden" }}
+                  >
+                    80% of leads choose the contractor who responds first.
+                    Letting website contact forms or Facebook messages sit
+                    untouched for even an hour slashes your booking rate to near
+                    zero.
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className={styles.leak}>
+              <button
+                className={styles.leakHeader}
+                onClick={() => setOpenIndex(openIndex === 3 ? null : 3)}
+              >
+                <h3>Lost Repeat & Referral Business</h3>
+                <motion.span
+                  className={styles.leakIcon}
+                  animate={{ rotate: openIndex === 3 ? 45 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  +
+                </motion.span>
+              </button>
+              <AnimatePresence initial={false}>
+                {openIndex === 3 && (
+                  <motion.p
+                    initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                    animate={{
+                      opacity: 1,
+                      height: "auto",
+                      marginTop: "0.75rem",
+                    }}
+                    exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    style={{ overflow: "hidden" }}
+                  >
+                    Your past customers are your most profitable asset. Leaving
+                    them stranded without consistent check-ins or automated
+                    referral requests leaves massive revenue trapped inside your
+                    old client lists.
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </div>
+          </div>
+        </section>
+
+        {/* update to tiers */}
+        <section className={styles.services}>
+          <h1>Solutions</h1>
+          <div className={styles.servicesContent}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.solution}>
+                <h2>Tier 1: The Essential Presence </h2>
+                <h3>(Capture & Trust)</h3>
+                <p>$1,500 setup fee + $149/month</p>
+                <i className={styles.beige}>
+                  For newer or smaller businesses that need a
+                  professional baseline.
+                </i>
+                <div className={styles.included}>
+                  <ul>
+                    Includes:
+                    <li>Custom high-performing website</li>
+                    <li>Local SEO Foundation & Google Business Profile optimization</li>
+                    <li>Website hosting, security, and monthly maintenance</li>
+                    <li><b>Missed-Call Text Back:</b>automatically text back missed calls to never miss an opportunity</li>
+                  </ul>
+                </div>
+                <p className={styles.beige}>
+                We build your site, manage your hosting, keep your Google profile updated, and activate Missed-Call Text Back, so you stop losing leads to your competitors when you can't answer the phone.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.solution}>
+                <h2>Tier 2: The Growth Engine <i>*Recommended Best Seller</i></h2>
+                <h3>(Convert & Automate)</h3>
+                <p>$2,500 setup fee + $499/month</p>
+                <i className={styles.beige}>
+                For established businesses looking to dominate their local competitors.
+                </i>
+                <div className={styles.included}>
+                  <ul>
+                    Includes:
+                    <li>Everything in Tier 1</li>
+                    <li><b>Automated Review Generation:</b> SMS/Email review campaigns to win the Google Maps ranking game.</li>
+                    <li><b>Unified Lead Inbox:</b> All FB messages, Google chats, SMS, and website leads in one screen.</li>
+                    <li><b>Lead Nurturing & Automation:</b> Instant automated follow-ups, pipeline tracking, and online calendar booking.</li>
+                  </ul>
+                </div>
+                <p className={styles.beige}>
+                We build your entire digital foundation, automate your Google review generation to win the local maps game, and provide a unified CRM inbox to manage all your customer conversations in one place.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.solution}>
+                <h2>Tier 3: The Local Authority </h2>
+                <h3>(Scale & Accelerate)</h3>
+                <p>$3,500 setup fee + $799/month</p>
+                <i className={styles.beige}>
+                For businesses with aggressive growth goals and an active marketing budget.
+
+                </i>
+                <div className={styles.included}>
+                  <ul>
+                    Includes:
+                    <li>Everything in Tiers 1 & 2</li>
+                    <li><b>Google Local Services Ads (GLA):</b> Setup and weekly management</li>
+                    <li><b>Database Reactivation:</b> Running seasonal email/SMS campaigns to their existing customer list to unearth "hidden" revenue.</li>
+                    <li><b>Referral & Loyalty Systems:</b> Automated post-job referral request workflows.</li>
+                  </ul>
+                </div>
+                <p className={styles.beige}>
+                We handle your website, automation, reviews, and manage your Google Local Services Ads to actively flood your pipeline with qualified, inbound leads.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className={styles.buttonContainer}>
+            <div className={styles.ctas}>
+              <MotionLink
+                className={styles.primary}
+                href={"./services"}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                }}
+              >
+                Services
+              </MotionLink>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.weDo}>
+          <h2>Websites Built to Generate Business</h2>
+          <p>
+            Every customer acquisition system starts with a strong digital
+            foundation. Our custom websites are built to help local service
+            businesses get found, build trust, and convert more visitors into
+            leads. Fast, mobile-friendly, and search-engine optimized, they
+            serve as the engine behind your online growth.
           </p>
           <div className={styles.features}>
             <div>
@@ -158,93 +424,14 @@ export default function HomeClient() {
                       />
                     </svg>
                     <p className={styles.support}>
-                      There's no point in having a stunning website if nobody
-                      will see it. We make sure each website is optimized to
-                      populate high in search results.
+                      A beautiful site means nothing if it sits on page 5 of
+                      Google. We bake local search engine optimization into the
+                      foundation so you're positioned where high-intent buyers
+                      are looking.
                     </p>
                   </div>
                 </div>
               </motion.div>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.services}>
-          <h1>Products</h1>
-          <div className={styles.servicesContent}>
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <div className={styles.establishText}>
-                <h2>Starter Package</h2>
-                <h3></h3>
-                <p>
-                  Our flagship product described above. Includes responsive
-                  design, SEO, maintenance, and updates.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.7,
-                ease: "easeOut",
-                delay: isLargeScreen ? 0.15 : 0,
-              }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <div className={styles.growText}>
-                <h2>Brand Refresh</h2>
-                <h3></h3>
-                <p>
-                  Work with our design expert to create a new brand book,
-                  including logos, icons, and colors. We'll utilize your custom
-                  elements and take your web presence to the next level.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.7,
-                ease: "easeOut",
-                delay: isLargeScreen ? 0.3 : 0,
-              }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <div className={styles.expandText}>
-                <h2>Marketing Boost</h2>
-                <h3></h3>
-                <p>
-                  Expand your reach with email and text services, google ads,
-                  and social media assistance.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-
-          <div className={styles.buttonContainer}>
-            <div className={styles.ctas}>
-              <MotionLink
-                className={styles.primary}
-                href={"./services"}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 300,
-                  damping: 20,
-                }}
-              >
-                Services
-              </MotionLink>
             </div>
           </div>
         </section>
@@ -270,6 +457,7 @@ export default function HomeClient() {
                     src="/califrames.png"
                     alt="Screenshot of a website built for Cali Cleanerz"
                     fill
+                    sizes="(max-width: 600px) 85vw, 400px"
                     style={{ objectFit: "contain" }}
                   />
                 </div>
@@ -316,6 +504,7 @@ export default function HomeClient() {
                     src="/mitchellframes.png"
                     alt="Screenshot of a website built for Mitchell Builds"
                     fill
+                    sizes="(max-width: 600px) 85vw, 400px"
                     style={{ objectFit: "contain" }}
                   />
                 </div>
@@ -362,13 +551,14 @@ export default function HomeClient() {
                     src="/woodwrightframes.png"
                     alt="Screenshot of a website built for Woodwright Millwork"
                     fill
+                    sizes="(max-width: 600px) 85vw, 400px"
                     style={{ objectFit: "contain" }}
                   />
                 </div>
                 <p>
                   Another take on letting the product speak for itself, this
-                  website features a carousel with fade effects and
-                  a custom shuffle component to quickly view different images.
+                  website features a carousel with fade effects and a custom
+                  shuffle component to quickly view different images.
                 </p>
                 <div className={styles.buttonContainer}>
                   <div className={styles.ctas}>

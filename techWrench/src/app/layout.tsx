@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
 const pressura = localFont({
   src: "./fonts/GT-Pressura-Bold.ttf",
   weight: "700",
   style: "normal",
   variable: "--font-pressura",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -64,7 +72,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pressura.variable}`}>
+      <body className={`${pressura.variable} ${inter.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
