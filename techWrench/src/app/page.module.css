@@ -141,7 +141,9 @@
   width: 100%;
   text-align: center;
   z-index: 1;
-  box-shadow: 0px -1px 10px 0px #000000c8, 0px 1px 10px 0px #000000c8;
+  box-shadow:
+    0px -1px 10px 0px #000000c8,
+    0px 1px 10px 0px #000000c8;
 }
 
 .services h1 {
@@ -166,11 +168,11 @@
   background-color: #051d22;
 }
 
-.solution i{
-color: #cfc6bb;
+.solution i {
+  color: #cfc6bb;
 }
 
-.beige { 
+.beige {
   color: #cfc6bb;
 }
 
@@ -178,9 +180,69 @@ color: #cfc6bb;
   padding: 1rem;
 }
 
-.included li{
+.included li {
   text-align: left;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
+}
+
+/* CRM Highlights */
+.crm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #cfc6bb;
+  box-shadow:
+    0px -1px 10px 0px #000000c8,
+    0px 1px 10px 0px #000000c8;
+}
+
+.crm p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+.crmFeatures {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.crmFeature {
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: #3c6a79;
+  color: #ffff;
+  box-shadow: 0px 0px 10px 0px #000000c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  display: block;
+}
+
+.crmFeatureContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crmTitle {
+  text-decoration: underline;
 }
 
 /* Website Highlights */
@@ -192,7 +254,6 @@ color: #cfc6bb;
   padding: 2rem 1rem;
   max-width: 700px;
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .weDo p {
@@ -229,11 +290,6 @@ color: #cfc6bb;
   display: flex;
   align-items: center;
   text-align: left;
-}
-
-.bullet {
-  list-style: none;
-  text-decoration: underline;
 }
 
 .support {
@@ -288,7 +344,10 @@ color: #cfc6bb;
   height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -381,6 +440,13 @@ a.secondary {
   .intro {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+}
+
+@media (max-width: 830px) {
+  .crmFeatures {
+    flex-direction: column;
+    max-width: 100%;
   }
 }
 

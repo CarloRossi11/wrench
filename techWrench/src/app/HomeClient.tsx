@@ -250,12 +250,12 @@ export default function HomeClient() {
                     </li>
                   </ul>
                 </div>
-                <p className={styles.beige}>
+                {/* <p className={styles.beige}>
                   We build your site, manage your hosting, keep your Google
                   profile updated, and activate Missed-Call Text Back, so you
                   stop losing leads to your competitors when you can't answer
                   the phone.
-                </p>
+                </p> */}
               </div>
             </motion.div>
 
@@ -297,12 +297,12 @@ export default function HomeClient() {
                     </li>
                   </ul>
                 </div>
-                <p className={styles.beige}>
+                {/* <p className={styles.beige}>
                   We build your entire digital foundation, automate your Google
                   review generation to win the local maps game, and provide a
                   unified CRM inbox to manage all your customer conversations in
                   one place.
-                </p>
+                </p> */}
               </div>
             </motion.div>
 
@@ -342,11 +342,11 @@ export default function HomeClient() {
                     </li>
                   </ul>
                 </div>
-                <p className={styles.beige}>
+                {/* <p className={styles.beige}>
                   We handle your website, automation, reviews, and manage your
                   Google Local Services Ads to actively flood your pipeline with
                   qualified, inbound leads.
-                </p>
+                </p> */}
               </div>
             </motion.div>
           </div>
@@ -364,9 +364,87 @@ export default function HomeClient() {
                   damping: 20,
                 }}
               >
-                Services
+                Learn More
               </MotionLink>
             </div>
+          </div>
+        </section>
+
+        <section className={styles.crm}>
+          <h1>Every Lead. One Platform.</h1>
+          <p>
+            Most local businesses juggle phone calls, text messages, website
+            inquiries, Facebook messages, and Google chats across multiple apps.
+            Tech Wrench centralizes every conversation into one system and
+            automates follow-up so opportunities never slip through the cracks.
+          </p>
+          <div className={styles.crmFeatures}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.crmFeature}>
+                <h3 className={styles.crmTitle}>Unified lead inbox</h3>
+                <div className={styles.crmFeatureContent}>
+                  <p>
+                    Manage website leads, text messages, Facebook messages,
+                    Google chats, and missed calls from a single dashboard.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.crmFeature}>
+                <h3 className={styles.crmTitle}>Automated Follow-Up</h3>
+                <div className={styles.crmFeatureContent}>
+                  <p>
+                    Respond to new leads within seconds using automated SMS and
+                    email workflows, even when you're busy serving customers or
+                    after regular business hours.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.crmFeature}>
+                <h3 className={styles.crmTitle}>Lead Pipeline Management</h3>
+                <div className={styles.crmFeatureContent}>
+                  <p>
+                    Track every prospect from inquiry to estimate to completed
+                    job so you always know where your opportunities stand.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className={styles.crmFeature}>
+                <h3 className={styles.crmTitle}>Appointment Booking</h3>
+                <div className={styles.crmFeatureContent}>
+                  <p>
+                    Let customers schedule estimates and consultations online
+                    while reducing the back-and-forth of phone calls and
+                    voicemails.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
@@ -388,7 +466,7 @@ export default function HomeClient() {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className={styles.feature}>
-                  <h3 className={styles.bullet}>Load quickly</h3>
+                  <h3>Load quickly</h3>
                   <div className={styles.featureContent}>
                     <svg
                       className={styles.icon}
@@ -416,9 +494,7 @@ export default function HomeClient() {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className={styles.feature}>
-                  <h3 className={styles.bullet}>
-                    Designed for Mobile & Desktop
-                  </h3>
+                  <h3>Designed for Mobile & Desktop</h3>
                   <div className={styles.featureContent}>
                     <svg
                       className={styles.icon}
@@ -447,9 +523,7 @@ export default function HomeClient() {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className={styles.feature}>
-                  <h3 className={styles.bullet}>
-                    Search Engine Optimized (SEO)
-                  </h3>
+                  <h3>Search Engine Optimized (SEO)</h3>
                   <div className={styles.featureContent}>
                     <svg
                       className={styles.icon}
@@ -477,7 +551,9 @@ export default function HomeClient() {
         </section>
 
         <section className={styles.portfolio}>
-          <h2><u>Website Portfolio</u></h2>
+          <h2>
+            <u>Website Portfolio</u>
+          </h2>
           {/* Device Mockups created from <a href="https://deviceframes.com/templates/iphone-13">iPhone mockups</a> */}
           <div className={styles.portfolioContent}>
             <motion.div
