@@ -1,13 +1,19 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
-import { motion, AnimatePresence } from "motion/react";
 import Navbar from "./components/Navbar";
-import { useState, useEffect } from "react";
+
+// TODO //
+// Move Portfolio to separate page
+// Create portal link on header
+// Move sections to individual files
 
 export default function HomeClient() {
   const MotionLink = motion.create(Link);
@@ -328,7 +334,7 @@ export default function HomeClient() {
                     Includes:
                     <li>Everything in Tiers 1 & 2</li>
                     <li>
-                      <b>Google Local Services Ads (GLA):</b> Setup and weekly
+                      <b>Google Local Services Ads (LSA):</b> Setup and weekly
                       management
                     </li>
                     <li>

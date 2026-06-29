@@ -161,7 +161,7 @@ export default function Page() {
                     Includes:
                     <li>Everything in Tiers 1 & 2</li>
                     <li>
-                      <b>Google Local Services Ads (GLA):</b> Setup and weekly
+                      <b>Google Local Services Ads (LSA):</b> Setup and weekly
                       management
                     </li>
                     <li>
