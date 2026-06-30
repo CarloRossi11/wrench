@@ -9,6 +9,7 @@ import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
 import Intro from "./homeSections/Intro";
 import Problems from "./homeSections/Problems";
+import Solutions from "./homeSections/Solutions";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
@@ -231,8 +232,8 @@ export default function HomeClient() {
           </div>
         </section> */}
 
-        {/* update to tiers */}
-        <section className={styles.services}>
+        <Solutions />
+        {/* <section className={styles.services}>
           <h1>Solutions</h1>
           <div className={styles.servicesContent}>
             <motion.div
@@ -243,7 +244,7 @@ export default function HomeClient() {
             >
               <div className={styles.solution}>
                 <h2>Tier 1: The Essential Presence </h2>
-                {/* <h3>(Capture & Trust)</h3> */}
+
                 <p>$1,500 setup fee + $149/month</p>
                 <i className={styles.beige}>Get Found and Never Miss a Lead</i>
                 <div className={styles.included}>
@@ -261,12 +262,6 @@ export default function HomeClient() {
                     </li>
                   </ul>
                 </div>
-                {/* <p className={styles.beige}>
-                  We build your site, manage your hosting, keep your Google
-                  profile updated, and activate Missed-Call Text Back, so you
-                  stop losing leads to your competitors when you can't answer
-                  the phone.
-                </p> */}
               </div>
             </motion.div>
 
@@ -284,7 +279,7 @@ export default function HomeClient() {
                 <h2>
                   Tier 2: The Growth Engine <i>*Recommended Best Seller</i>
                 </h2>
-                {/* <h3>(Convert & Automate)</h3> */}
+
                 <p>$2,500 setup fee + $499/month</p>
                 <i className={styles.beige}>
                   Automate Follow-Up and Convert More Customers{" "}
@@ -308,12 +303,6 @@ export default function HomeClient() {
                     </li>
                   </ul>
                 </div>
-                {/* <p className={styles.beige}>
-                  We build your entire digital foundation, automate your Google
-                  review generation to win the local maps game, and provide a
-                  unified CRM inbox to manage all your customer conversations in
-                  one place.
-                </p> */}
               </div>
             </motion.div>
 
@@ -329,7 +318,7 @@ export default function HomeClient() {
             >
               <div className={styles.solution}>
                 <h2>Tier 3: The Local Authority </h2>
-                {/* <h3>(Scale & Accelerate)</h3> */}
+
                 <p>$3,500 setup fee + $799/month</p>
                 <i className={styles.beige}>
                   Generate More Leads and Unlock Hidden Revenue
@@ -353,11 +342,6 @@ export default function HomeClient() {
                     </li>
                   </ul>
                 </div>
-                {/* <p className={styles.beige}>
-                  We handle your website, automation, reviews, and manage your
-                  Google Local Services Ads to actively flood your pipeline with
-                  qualified, inbound leads.
-                </p> */}
               </div>
             </motion.div>
           </div>
@@ -379,7 +363,7 @@ export default function HomeClient() {
               </MotionLink>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className={styles.crm}>
           <h1>Every Lead on One Platform</h1>
