@@ -31,6 +31,46 @@
   max-width: 700px;
 }
 
+.ctas {
+  display: flex;
+  justify-content: center;
+}
+
+.ctas a {
+  appearance: none;
+  border-radius: 128px;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+a.primary {
+  background-color: #cfc6bb;
+  color: #051d22;
+  border: var(--foreground);
+  gap: 8px;
+  margin: 1rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background-color: #051d22;
+    color: #cfc6bb;
+    border: 1px solid #cfc6bb;
+  }
+}
+
 @media (max-width: 850px) {
   .intro {
     grid-template-columns: 1fr;

@@ -7,7 +7,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 import Navbar from "./components/Navbar";
-import Intro from "./homeSections/Intro"
+import Intro from "./homeSections/Intro";
+import Problems from "./homeSections/Problems";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
@@ -19,7 +20,7 @@ import Footer from "./components/Footer";
 export default function HomeClient() {
   const MotionLink = motion.create(Link);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  // const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const check = () => setIsLargeScreen(window.innerWidth > 600);
@@ -33,7 +34,8 @@ export default function HomeClient() {
       <div className={styles.navBar}>
         <Navbar />
       </div>
-      <Intro/>
+
+      <Intro />
 
       {/* <section className={styles.intro}>
         <div className={styles.introLeft}>
@@ -74,7 +76,8 @@ export default function HomeClient() {
       </section> */}
 
       <main className={styles.main}>
-        <section className={styles.problems}>
+        <Problems />
+        {/* <section className={styles.problems}>
           <h2>The Hidden Leaks in Your Customer Pipeline</h2>
           <p>
             Most local businesses don't have a lead problem—they have a lead
@@ -226,7 +229,7 @@ export default function HomeClient() {
               </AnimatePresence>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* update to tiers */}
         <section className={styles.services}>
@@ -434,7 +437,8 @@ export default function HomeClient() {
                 <div className={styles.crmFeatureContent}>
                   <p>
                     Track every prospect from inquiry, to estimate, to completed
-                    job, and beyond so you always know where your opportunities stand.
+                    job, and beyond so you always know where your opportunities
+                    stand.
                   </p>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function HomeClient() {
+export default function Intro() {
   const MotionLink = motion.create(Link);
 
   return (
