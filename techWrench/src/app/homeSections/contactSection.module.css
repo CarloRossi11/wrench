@@ -1,0 +1,62 @@
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #051d22;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px -1px 10px 0px #000000c8;
+}
+
+.contact h1 {
+  padding: 1rem 0rem;
+}
+
+.contactText {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlayImage {
+  object-fit: cover;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 20%, #051d22 90%);
+  mask-image: linear-gradient(to bottom, transparent 20%, #051d22 90%);
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background-color: #051d22;
+    color: #cfc6bb;
+    border: 1px solid #cfc6bb;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .overlayImageWrapper {
+    position: absolute;
+    inset: -20%;
+    z-index: 0;
+  }
+
+  .overlayImage {
+    position: absolute;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 40%, black 80%);
+    mask-image: linear-gradient(to bottom, transparent 40%, black 80%);
+  }
+}
