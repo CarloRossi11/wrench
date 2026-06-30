@@ -83,6 +83,15 @@ export default function Navbar() {
 
         <MotionLink
           className={styles.button}
+          href="/portfolio"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <h3>Portfolio</h3>
+        </MotionLink>
+
+        <MotionLink
+          className={styles.button}
           href="/contact"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -125,6 +134,11 @@ export default function Navbar() {
             <motion.li variants={itemVariants}>
               <Link href="/services" onClick={() => setIsOpen(false)}>
                 Services
+              </Link>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <Link href="/portfolio" onClick={() => setIsOpen(false)}>
+                Portfolio
               </Link>
             </motion.li>
             <motion.li variants={itemVariants}>
