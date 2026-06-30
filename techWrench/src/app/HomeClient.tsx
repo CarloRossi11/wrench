@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Intro from "./homeSections/Intro";
 import Problems from "./homeSections/Problems";
 import Solutions from "./homeSections/Solutions";
+import CRM from "./homeSections/CRM";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
@@ -364,8 +365,8 @@ export default function HomeClient() {
             </div>
           </div>
         </section> */}
-
-        <section className={styles.crm}>
+<CRM/>
+        {/* <section className={styles.crm}>
           <h1>Every Lead on One Platform</h1>
           <p>
             Most local businesses juggle phone calls, text messages, website
@@ -446,7 +447,7 @@ export default function HomeClient() {
               </div>
             </motion.div>
           </div>
-        </section>
+        </section> */}
 
         <section className={styles.weDo}>
           <h1>Websites Built to Generate Business</h1>

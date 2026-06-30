@@ -135,7 +135,7 @@
 } */
 
 /* Tiers */
-.services {
+/* .services {
   padding: 2rem 1rem;
   background-color: #3c6a79;
   color: #fff;
@@ -184,10 +184,10 @@
 .included li {
   text-align: left;
   padding-top: 0.5rem;
-}
+} */
 
 /* CRM Highlights */
-.crm {
+/* .crm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +244,7 @@
 
 .crmTitle {
   text-decoration: underline;
-}
+} */
 
 /* Website Highlights */
 .weDo {
@@ -437,12 +437,12 @@ a.secondary {
   }
 }
 
-@media (max-width: 830px) {
+/* @media (max-width: 830px) {
   .crmFeatures {
     flex-direction: column;
     max-width: 100%;
   }
-}
+} */
 
 @media (max-width: 600px) {
   .main {
