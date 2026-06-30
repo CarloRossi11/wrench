@@ -6,9 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-import Footer from "./components/Footer";
-import ContactForm from "./components/ContactForm";
 import Navbar from "./components/Navbar";
+import Intro from "./homeSections/Intro"
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 // TODO //
 // Move Portfolio to separate page
@@ -32,8 +33,9 @@ export default function HomeClient() {
       <div className={styles.navBar}>
         <Navbar />
       </div>
+      <Intro/>
 
-      <section className={styles.intro}>
+      {/* <section className={styles.intro}>
         <div className={styles.introLeft}>
           <Image
             id="hero"
@@ -69,7 +71,7 @@ export default function HomeClient() {
             </MotionLink>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <main className={styles.main}>
         <section className={styles.problems}>
