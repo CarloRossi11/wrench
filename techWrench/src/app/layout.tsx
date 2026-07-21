@@ -20,9 +20,52 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.techwrench.co"),
-  title: "Tech Wrench - Website Development Services",
+  title:
+    "Tech Wrench | Customer Acquisition Systems for Local Service Businesses",
   description:
-    "Tech Wrench offers professional website development services, specializing in custom and lead generation websites to help your business grow online.",
+    "Tech Wrench helps local service businesses get found online, capture every lead, and win more customers through high-performance websites, Google Business optimization, lead automation, and customer acquisition systems.",
+  keywords: [
+    "customer acquisition",
+    "lead generation",
+    "Google Business Profile optimization",
+    "local SEO",
+    "website development",
+    "Next.js websites",
+    "CRM",
+    "lead management",
+    "marketing automation",
+    "Google Local Services Ads",
+    "small business marketing",
+    "Pittsburgh web design",
+    "Pittsburgh SEO",
+  ],
+
+  authors: [
+    {
+      name: "Tech Wrench",
+      url: "https://www.techwrench.co",
+    },
+  ],
+
+  creator: "Tech Wrench",
+
+  publisher: "Tech Wrench",
+
+  alternates: {
+    canonical: "https://www.techwrench.co",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   icons: {
     icon: [
       {
@@ -39,9 +82,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Tech Wrench - Website Development Services",
+    title: "Tech Wrench | Customer Acquisition Systems",
     description:
-      "Professional website development services specializing in custom and lead generation websites.",
+      "Tech Wrench helps local service businesses get found online, capture every lead, and win more customers through high-performance websites, Google Business optimization, lead automation, and customer acquisition systems.",
     url: "https://www.techwrench.co",
     siteName: "Tech Wrench",
     images: [
@@ -49,7 +92,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tech Wrench Web Solutions",
+        alt: "Tech Wrench helps local service businesses get found online and win more customers.",
       },
     ],
     locale: "en_US",
@@ -58,10 +101,15 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Tech Wrench - Website Development Services",
+    title: "Tech Wrench | Customer Acquisition Systems",
     description:
-      "Professional website development services specializing in custom and lead generation websites.",
-    images: ["/og-image.png"],
+      "Tech Wrench helps local service businesses get found online, capture every lead, and win more customers through high-performance websites, Google Business optimization, lead automation, and customer acquisition systems.",
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Tech Wrench helps local service businesses get found online and win more customers.",
+      },
+    ],
   },
 };
 
@@ -85,10 +133,27 @@ export default function RootLayout({
               logo: "https://www.techwrench.co/twsVerticalWhite.svg",
               image: "https://www.techwrench.co/og-image.png",
               description:
-                "Tech Wrench builds custom websites and lead generation websites for small businesses across Pittsburgh, PA and the United States.",
+                "Tech Wrench helps local service businesses get found online, capture every lead, and win more customers through high-performance websites, Google Business optimization, lead automation, and customer acquisition systems.",
               priceRange: "$$",
               telephone: "+1-412-965-8201",
               email: "carlo@techwrench.co",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+1-412-965-8201",
+                contactType: "sales",
+                email: "carlo@techwrench.co",
+              },
+              serviceType: [
+                "Customer Acquisition",
+                "Website Development",
+                "Google Business Profile Optimization",
+                "Local SEO",
+                "Lead Management",
+                "CRM Implementation",
+                "Marketing Automation",
+                "Reputation Management",
+                "Google Local Services Ads",
+              ],
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Pittsburgh",
@@ -103,24 +168,51 @@ export default function RootLayout({
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "Web Development Services",
+                name: "Customer Acquisition & Growth Services",
                 itemListElement: [
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Custom Website Development",
+                      name: "Essential Presence",
                       description:
-                        "Fully custom websites designed and built to reflect your brand and convert visitors into customers.",
+                        "Professional website, Google Business Profile optimization, local SEO foundation, hosting, maintenance, and missed-call text back automation for local service businesses.",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Lead Generation Websites",
+                      name: "Growth Engine",
                       description:
-                        "Performance-focused websites built to capture leads and grow your small business.",
+                        "Lead management, automated review generation, CRM, pipeline tracking, unified inbox, and automated follow-up systems that convert more inquiries into customers.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Local Authority",
+                      description:
+                        "Google Local Services Ads management, database reactivation campaigns, referral automation, and ROI reporting for businesses focused on predictable growth.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Custom Website Development",
+                      description:
+                        "Fast, SEO-optimized Next.js websites built to help local service businesses generate more leads.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Google Business Profile Optimization",
+                      description:
+                        "Optimization and ongoing management of Google Business Profiles to improve local visibility and attract more customers.",
                     },
                   },
                 ],

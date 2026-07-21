@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 
 // TODO //
 // Create portal link on header
-// fix leak padding
+// Fix portfolio hero area
 
 export default function HomeClient() {
   return (
