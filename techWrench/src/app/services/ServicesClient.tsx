@@ -78,7 +78,7 @@ export default function Page() {
                     </li>
                     <li>Website hosting, security, and monthly maintenance</li>
                     <li>
-                      <b>Missed-Call Text Back:</b>automatically text back
+                      <b>Missed-Call Text Back:</b> Automatically text back
                       missed calls to never miss an opportunity
                     </li>
                   </ul>

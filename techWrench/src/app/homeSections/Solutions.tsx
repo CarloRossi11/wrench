@@ -38,7 +38,7 @@ export default function Solutions() {
                 </li>
                 <li>Website hosting, security, and monthly maintenance</li>
                 <li>
-                  <b>Missed-Call Text Back:</b>automatically text back missed
+                  <b>Missed-Call Text Back: </b>Automatically text back missed
                   calls to never miss an opportunity
                 </li>
               </ul>

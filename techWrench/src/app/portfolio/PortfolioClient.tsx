@@ -37,9 +37,9 @@ export default function Page() {
       <div className={styles.heroArea}>
         <Reveal direction="right">
           <div className={styles.heroText}>
-            <h1>Portfolio</h1>
+            <h1>PORTFOLIO</h1>
             <p>
-              Beautiful websites build to perform exceptionally and capture
+              Beautiful websites built to perform exceptionally and capture
               leads.
             </p>
           </div>
