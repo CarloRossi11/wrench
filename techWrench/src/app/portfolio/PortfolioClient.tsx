@@ -30,10 +30,11 @@ export default function Page() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} ref={heroRef}>
       <div className={styles.navBar}>
         <Navbar />
       </div>
+
       <div className={styles.heroArea}>
         <Reveal direction="right">
           <div className={styles.heroText}>
@@ -54,6 +55,7 @@ export default function Page() {
           />
         </motion.div>
       </div>
+
       <div className={styles.main}>
         <section className={styles.portfolio}>
           {/* <h2>
