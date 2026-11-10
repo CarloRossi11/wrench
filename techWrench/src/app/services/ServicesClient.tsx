@@ -184,7 +184,7 @@ export default function Page() {
             </motion.div>
             
           </div>
-          <h3 className={styles.add}>Ask about our Brand Refresh add on!</h3>
+          <h3 className={styles.add}>Looking for video and media content, or custom logos and branding? Work with our vetted partners for reliable, quality work.</h3>
           </div>
           <div className={styles.buttonContainer}>
             <div className={styles.ctas}>
